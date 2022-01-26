@@ -1,0 +1,11 @@
+##January 25th: Pick a connected application of your choice. It can be from the list we looked at in class or otherwise. Write a 300-500 word critique on the application. What do you think works? What doesn't? What would you like to do differently? This has to be available on your GitHub.
+
+A connected application I used a lot during the lockdown to talk to my friends was Discord. I think Discord is a very well-coded and designed app. It is a very smooth experience and hardly ever bugs out which is a huge feat for real-time communication apps. The design is intuitive, friendly, and fun. It caters to their target audience which is gamers.
+
+I like the concept of laying stuff out in different channels. How Discord handles the authorization of each channel so that only certain roles can react or send messages in certain channels is very well implemented as well. Apps like TeamSpeak made it needlessly complicated. Discord does it in a clean, simple and intuitive way.
+
+It now offers screen sharing, video call or voice call with up to 25-50 people. The ability to kick people out of calls, move them between channels, mute them, decrease their volume etc. is very well laid out in these calls.
+
+Discord has a lot of integrations with other apps as well. The abiity to share what song you are playing on Spotify to your friends in real-time was my favourite. Any user who has Spotify Premium can also join you for a listen along. It integrates well with a lot of games as well, further catering to their target audience of gamers.
+
+Some critiques I encountered with Discord were when I tried to introduce it to friends who aren't very tech-savvy or into gaming etc. They found out it unnecessarily complicated and cluttered. They preffered the simplicity of Google Meets for our calls. Discord has a high barrier to set up a call with multiple people and it can be hard to set up if no one in the friend group has used Discord before. Something like Google Meets just involves clicking a link. Now that Discord has become so important through the pandemic, it should work on being even more simple and friendly to people who just want to simply call their friends instead of engaging in joining 20 servers with 40 channels in each of them.
