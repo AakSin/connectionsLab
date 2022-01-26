@@ -1,4 +1,4 @@
-##January 25th: Pick a connected application of your choice. It can be from the list we looked at in class or otherwise. Write a 300-500 word critique on the application. What do you think works? What doesn't? What would you like to do differently? This has to be available on your GitHub.
+## January 25th: Pick a connected application of your choice. It can be from the list we looked at in class or otherwise. Write a 300-500 word critique on the application. What do you think works? What doesn't? What would you like to do differently? This has to be available on your GitHub.
 
 A connected application I used a lot during the lockdown to talk to my friends was Discord. I think Discord is a very well-coded and designed app. It is a very smooth experience and hardly ever bugs out which is a huge feat for real-time communication apps. The design is intuitive, friendly, and fun. It caters to their target audience which is gamers.
 
