@@ -42,6 +42,9 @@ img {
   height: 80vh;
   width: auto;
 }
+p {
+  font-weight: 300;
+}
 section {
   overflow: scroll;
   height: 80vh;
@@ -53,19 +56,19 @@ nav ul {
   list-style-type: none;
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 70vw;
-  font-size: 1.2rem;
+  justify-content: end;
+  font-size: 1.5rem;
+  margin-right: 2rem;
 }
 
 nav li {
   font-weight: 300;
-  padding: 1rem 3rem;
+  padding: 1rem 1rem;
   transition: 1s;
 }
 
 nav li:hover {
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   border-bottom: 1px solid #222222;
   cursor: pointer;
   transition: 1s;
