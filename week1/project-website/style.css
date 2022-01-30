@@ -1,0 +1,72 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+.container {
+  display: flex;
+}
+h1 {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: 4rem;
+  height: 100vh;
+  letter-spacing: -8px;
+  padding: 20px 0;
+  font-weight: 600;
+}
+
+.red-text {
+  background: radial-gradient(
+    50.97% 50.97% at 13.72% 90.89%,
+    rgba(203, 29, 29, 0.79) 0%,
+    rgba(254, 144, 144, 0.88) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+header {
+  display: flex;
+  flex-direction: column;
+}
+main {
+  display: flex;
+  flex-direction: row;
+}
+img {
+  height: 80vh;
+  width: auto;
+}
+section {
+  overflow: scroll;
+  height: 80vh;
+}
+nav {
+  height: auto;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70vw;
+  font-size: 1.2rem;
+}
+
+nav li {
+  font-weight: 300;
+  padding: 1rem 3rem;
+  transition: 1s;
+}
+
+nav li:hover {
+  font-size: 1.4rem;
+  border-bottom: 1px solid #222222;
+  cursor: pointer;
+  transition: 1s;
+}
