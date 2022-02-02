@@ -1,2 +1,2 @@
 # wireframe
-<img src="drawing.jpg" alt="drawing" width="200"/>
+<img src="wireframe.jpg" alt="wireframe" width="400"/>
