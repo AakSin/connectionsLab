@@ -73,3 +73,21 @@ nav li:hover {
   cursor: pointer;
   transition: 1s;
 }
+a {
+  color: inherit;
+  text-decoration: none;
+}
+@media (max-width: 760px) {
+  body {
+    overflow: scroll;
+  }
+  ul {
+    flex-direction: column;
+  }
+  main {
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+}
