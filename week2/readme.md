@@ -22,6 +22,7 @@ The HTML, CSS part was fairly simple. I used flexbox mainly for the positions. F
 I learnt how to use MDN better. I learnt more about the HTML audio tag. I learnt more about Figma Animations.
 
 # Todo
+- left and right arrow will make song go back and forth
 - add mute button functionality (clicking on volume button mutes it and the volume button changes to volume with a cut)
 - make the previous and next work + add more songs
 - make an animation of swiping between the songs
