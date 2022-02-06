@@ -1,3 +1,5 @@
+<img src="https://i.imgur.com/38ER7qa.jpg" width="500" alt="wireframe-1"/>
+<img src="https://i.imgur.com/3F9BLYe.jpg" width="500" alt="wireframe-2"/>
 <img src="https://i.gyazo.com/3cc413a42256cbc4381ade13230447f3.gif" alt="Figma Proto" width="1000"/>
 
 # todo
