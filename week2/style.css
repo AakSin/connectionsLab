@@ -56,6 +56,7 @@ h1 {
   height: 8px;
   background-color: rgba(255, 255, 255, 0.63);
   border-radius: 10px;
+  cursor: pointer;
   /* box-shadow: rgba(0, 0, 0, 61%) 3px 3px 5px 1px; */
 }
 
@@ -79,11 +80,12 @@ h1 {
 .fas {
   font-size: 2.2em;
   padding: 1vw;
+  cursor: pointer;
 }
 
 #artist-name {
   font-weight: 500;
-  letter-spacing: 0.135em;
+  letter-spacing: 1.5px;
   margin: 0;
 }
 #volume-container {
