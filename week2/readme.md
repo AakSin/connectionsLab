@@ -15,7 +15,7 @@ I then designed it out on Figma. Here's the link to the [Figma Prototype](https:
 # Coding
 The HTML, CSS part was fairly simple. I used flexbox mainly for the positions. For the Javascript, I learnt about the HTML audio tag and used MDN to find more info about it's attributes. I also looked up resources online about creating a music player and how to control certain attributes. 
 
-Note: The rationale behind using tags in many places instead of classes was that a lot of the elements on the page were unique. The styling or javascript being applied to them could not possibly be re-used. To emphasise that nature + make javascript simpler I decided to use IDs wherever suitable.
+**Note**: The rationale behind using IDs in many places instead of classes was that a lot of the elements on the page were unique. The styling or javascript being applied to them could not possibly be re-used. To emphasise that nature + make javascript simpler I decided to use IDs wherever suitable.
 
 # Learning
 
