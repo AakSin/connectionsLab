@@ -1,3 +1,4 @@
 # todo
 - add mute button functionality (clicking on volume button mutes it and the volume button changes to voluem with a cut)
 - make the previous and next work + add more songs
+- make favicon
