@@ -1,5 +1,15 @@
 
 [Project hosted live here](https://aaksin.github.io/connectionsLab/week2/index.html)
+
+It has click interactions - 
+- play/pause button
+- click on the progress bar to take you to a certain part of the song
+- same as above with volume bar
+
+It has keyboard interactions - 
+- press spacebar to play/pause
+- use up/down arrow to keys to control the volume
+
 # Planning
 <p float="left">
 <img src="https://i.imgur.com/38ER7qa.jpg" width="500" alt="wireframe-1"/>
