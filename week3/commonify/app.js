@@ -1,4 +1,5 @@
 import fetch from "node-fetch";
+import "dotenv/config";
 import { URLSearchParams, fileURLToPath } from "url";
 import express from "express";
 import path from "path";
@@ -12,8 +13,8 @@ const port = process.env.PORT || 8888;
 app.use(express.static(__dirname));
 app.use(express.static("public"));
 
-let client_id = "460496fe22734b9c94f59eefbfd9f7c2";
-let client_secret = "2047c58c1ce44793b3ae411f004db9fd";
+let client_id = process.env.CLIENT_ID;
+let client_secret = process.env.CLIENT_SECRET;
 let redirect_uri = "http://localhost:8888/callback";
 let user;
 
