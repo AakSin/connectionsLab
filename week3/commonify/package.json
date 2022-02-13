@@ -10,7 +10,7 @@
   "license": "ISC",
   "type": "module",
   "scripts": {
-    "start": "node app.js"
+    "start": "npm install && node app.js"
   },
   "dependencies": {
     "dotenv": "^16.0.0",
