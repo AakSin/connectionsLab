@@ -1,1 +1,4 @@
 heroku ps:scale web=1
+ls
+npm install
+node app.js
