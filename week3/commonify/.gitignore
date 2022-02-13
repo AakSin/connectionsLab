@@ -1,5 +1,3 @@
 /node_modules
 .DS_Store
-user1.json
-user2.json
 .env
