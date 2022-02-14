@@ -5,11 +5,16 @@ import express from "express";
 import path from "path";
 import fs from "fs";
 
+// wherever the file is hosted, find the path from the url. meta contains a lot of data about the current page, including the url.
 const __filename = fileURLToPath(import.meta.url);
 
+// get the directory name from the file name
 const __dirname = path.dirname(__filename);
+
+// initializing express
 const app = express();
 const port = process.env.PORT || 8888;
+// configuring usage of static files with express
 app.use(express.static(__dirname));
 app.use(express.static("public"));
 
@@ -32,10 +37,11 @@ function generateRandomString(length) {
   }
   return result;
 }
+
 // generate random 16 character state to prevent intereception
 const state = generateRandomString(16);
-// Creating and initializing
-// URLSearchParams object
+
+// Creating and initializing URLSearchParams object
 const params = new URLSearchParams();
 
 // Appending value in the object
@@ -46,27 +52,26 @@ params.append("state", state);
 params.append("redirect_uri", redirect_uri);
 params.append("show_dialog", "true");
 
-// Getting string representation
-// by using toString() api
+// Getting string representation by using toString() api
 const value = params.toString();
 
-// app.get("/", (req, res) => {
-//   res.sendFile(path.join(__dirname, "/index.html"));
-//   res.sendFile(path.join(__dirname, "/content.js"));
-// });
-
+//  on click the login buttons, redirect user to spotify for authorization
 app.get("/login", (req, res) => {
   user = req.query.user;
   console.log(user);
   res.redirect("https://accounts.spotify.com/authorize?" + value);
 });
 
+// handle callback that we get from authorization path
 app.get("/callback", (req, res) => {
+  // get code and state from url query
   const code = req.query.code || null;
   const reqState = req.query.state || null;
+  // reqState starts with plus symbol, state starts with blank space. Hence, the slicing.
   if (reqState.slice(1) != state.slice(1)) {
     res.send("State Mismatch");
   } else {
+    // convert this string to base64 (requirment of spotify api)
     console.log(btoa(client_id + ":" + client_secret));
     async function getToken() {
       const response = await fetch("https://accounts.spotify.com/api/token", {
@@ -101,5 +106,5 @@ app.get("/callback", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+  console.log(`Connectify app listening on port ${port}`);
 });

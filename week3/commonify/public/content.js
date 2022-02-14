@@ -5,15 +5,18 @@ window.addEventListener("load", () => {
 
     response.then((data) => {
       for (let i = 0; i < data.items.length; i++) {
+        // create elements
         const userDiv = document.getElementById(userNumber);
         const listItem = document.createElement("li");
         const name = document.createElement("p");
         const image = document.createElement("img");
         const imageArray = data.items[i].images;
 
+        // add data to elements
         name.textContent = data.items[i].name;
         image.src = imageArray[imageArray.length - 1].url;
 
+        // append elements
         userDiv.appendChild(listItem);
         listItem.appendChild(name);
         listItem.appendChild(image);
