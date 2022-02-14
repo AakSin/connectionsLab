@@ -20,7 +20,7 @@ app.use(express.static("public"));
 
 let client_id = process.env.CLIENT_ID;
 let client_secret = process.env.CLIENT_SECRET;
-let redirect_uri = "https://connectify-connlab.herokuapp.com/callback";
+let redirect_uri = "https://commonify.herokuapp.com/callback";
 let user;
 
 // program to generate random strings for Spotify API state
@@ -106,5 +106,5 @@ app.get("/callback", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Connectify app listening on port ${port}`);
+  console.log(`Commonify app listening on port ${port}`);
 });
