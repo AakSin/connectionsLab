@@ -23,33 +23,73 @@ function preload() {
           }
           if (user1[i].id == user2[j].id) {
             mutualArtists.push(user1[i]);
-            finalBubbles.push(user1[i]);
+            artist = user1[i];
+            artist["belonging"] = "mutual";
+            finalBubbles.push(artist);
           }
         }
       }
       user1length = Math.ceil((totalBubbles - mutualArtists.length) / 2);
       user2length = Math.floor((totalBubbles - mutualArtists.length) / 2);
+      // let counter = 0;
+      // let index = 0;
+      // while (counter < user1length) {
+      //   debugger;
+      //   if (!mutualArtists.includes(user1[index])) {
+      //     debugger;
+      //     finalBubbles.push(user1[index]);
+      //     counter += 1;
+      //   }
+      //   index += 1;
+      // }
+      // counter = 0;
+      // index = 0;
+      // while (counter < user2length) {
+      //   debugger;
+      //   if (!mutualArtists.includes(user2[index])) {
+      //     debugger;
+      //     finalBubbles.push(user2[index]);
+      //     counter += 1;
+      //   }
+      //   index += 1;
+      // }
       let counter = 0;
-      let index = 0;
-      while (counter < user1length) {
-        debugger;
-        if (!mutualArtists.includes(user1[index])) {
-          debugger;
-          finalBubbles.push(user1[index]);
-          counter += 1;
+      for (let i = 0; i < user1.length; i++) {
+        let occursIn = false;
+        for (let j = 0; j < mutualArtists.length; j++) {
+          if (user1[i].id == mutualArtists[j].id) {
+            occursIn = true;
+            break;
+          }
         }
-        index += 1;
+        if (counter == user1length) {
+          break;
+        }
+        if (!occursIn) {
+          counter += 1;
+          artist = user1[i];
+          artist["belonging"] = "user1";
+          finalBubbles.push(artist);
+        }
       }
       counter = 0;
-      index = 0;
-      while (counter < user2length) {
-        debugger;
-        if (!mutualArtists.includes(user2[index])) {
-          debugger;
-          finalBubbles.push(user2[index]);
-          counter += 1;
+      for (let i = 0; i < user2.length; i++) {
+        let occursIn = false;
+        for (let j = 0; j < mutualArtists.length; j++) {
+          if (user2[i].id == mutualArtists[j].id) {
+            occursIn = true;
+            break;
+          }
         }
-        index += 1;
+        if (counter == user2length) {
+          break;
+        }
+        if (!occursIn) {
+          counter += 1;
+          artist = user2[i];
+          artist["belonging"] = "user2";
+          finalBubbles.push(artist);
+        }
       }
       console.log(finalBubbles);
     });
