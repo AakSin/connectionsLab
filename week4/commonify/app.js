@@ -85,13 +85,16 @@ app.get("/callback", (req, res) => {
       return response.json();
     }
     getToken().then((data) => {
-      fetch("https://api.spotify.com/v1/me/top/artists?limit=50", {
-        headers: {
-          Accept: "application/json",
-          "Content-Type": "application/json",
-          Authorization: `Bearer ${data.access_token}`,
-        },
-      })
+      fetch(
+        "https://api.spotify.com/v1/me/top/artists?limit=50&time_range=long_term",
+        {
+          headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json",
+            Authorization: `Bearer ${data.access_token}`,
+          },
+        }
+      )
         .then((response) => response.json())
         .then((data) => {
           if (user == "1") {
