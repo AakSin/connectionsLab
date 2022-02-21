@@ -2,583 +2,350 @@
   "items": [
     {
       "external_urls": {
-        "spotify": "https://open.spotify.com/artist/2xvtxDNInKDV4AvGmjw6d1"
+        "spotify": "https://open.spotify.com/artist/3Nrfpe0tUJi4K4DXYWgMUX"
       },
-      "followers": { "href": null, "total": 261245 },
-      "genres": ["glitchcore", "underground hip hop"],
-      "href": "https://api.spotify.com/v1/artists/2xvtxDNInKDV4AvGmjw6d1",
-      "id": "2xvtxDNInKDV4AvGmjw6d1",
+      "followers": { "href": null, "total": 45922153 },
+      "genres": ["k-pop", "k-pop boy group"],
+      "href": "https://api.spotify.com/v1/artists/3Nrfpe0tUJi4K4DXYWgMUX",
+      "id": "3Nrfpe0tUJi4K4DXYWgMUX",
       "images": [
         {
           "height": 640,
-          "url": "https://i.scdn.co/image/ab6761610000e5ebd8a32f7731e293fd4ec6914b",
+          "url": "https://i.scdn.co/image/ab6761610000e5eb82a5d58059f81867b871d8b6",
           "width": 640
         },
         {
           "height": 320,
-          "url": "https://i.scdn.co/image/ab67616100005174d8a32f7731e293fd4ec6914b",
+          "url": "https://i.scdn.co/image/ab6761610000517482a5d58059f81867b871d8b6",
           "width": 320
         },
         {
           "height": 160,
-          "url": "https://i.scdn.co/image/ab6761610000f178d8a32f7731e293fd4ec6914b",
+          "url": "https://i.scdn.co/image/ab6761610000f17882a5d58059f81867b871d8b6",
           "width": 160
         }
       ],
-      "name": "Bladee",
-      "popularity": 71,
+      "name": "BTS",
+      "popularity": 96,
       "type": "artist",
-      "uri": "spotify:artist:2xvtxDNInKDV4AvGmjw6d1"
+      "uri": "spotify:artist:3Nrfpe0tUJi4K4DXYWgMUX"
     },
     {
       "external_urls": {
-        "spotify": "https://open.spotify.com/artist/699OTQXzgjhIYAHMy9RyPD"
+        "spotify": "https://open.spotify.com/artist/3HqSLMAZ3g3d5poNaI7GOU"
       },
-      "followers": { "href": null, "total": 6069611 },
-      "genres": ["atl hip hop", "plugg", "pluggnb", "rap", "trap"],
-      "href": "https://api.spotify.com/v1/artists/699OTQXzgjhIYAHMy9RyPD",
-      "id": "699OTQXzgjhIYAHMy9RyPD",
+      "followers": { "href": null, "total": 6511641 },
+      "genres": ["k-pop"],
+      "href": "https://api.spotify.com/v1/artists/3HqSLMAZ3g3d5poNaI7GOU",
+      "id": "3HqSLMAZ3g3d5poNaI7GOU",
       "images": [
         {
           "height": 640,
-          "url": "https://i.scdn.co/image/ab6761610000e5eb504ff11d788162fbf8078654",
+          "url": "https://i.scdn.co/image/ab6761610000e5eb006ff3c0136a71bfb9928d34",
           "width": 640
         },
         {
           "height": 320,
-          "url": "https://i.scdn.co/image/ab67616100005174504ff11d788162fbf8078654",
+          "url": "https://i.scdn.co/image/ab67616100005174006ff3c0136a71bfb9928d34",
           "width": 320
         },
         {
           "height": 160,
-          "url": "https://i.scdn.co/image/ab6761610000f178504ff11d788162fbf8078654",
+          "url": "https://i.scdn.co/image/ab6761610000f178006ff3c0136a71bfb9928d34",
           "width": 160
         }
       ],
-      "name": "Playboi Carti",
-      "popularity": 88,
+      "name": "IU",
+      "popularity": 77,
       "type": "artist",
-      "uri": "spotify:artist:699OTQXzgjhIYAHMy9RyPD"
+      "uri": "spotify:artist:3HqSLMAZ3g3d5poNaI7GOU"
     },
     {
       "external_urls": {
-        "spotify": "https://open.spotify.com/artist/2uYWxilOVlUdk4oV9DvwqK"
+        "spotify": "https://open.spotify.com/artist/06HL4z0CvFAxyc27GXpf02"
       },
-      "followers": { "href": null, "total": 2291842 },
-      "genres": ["brooklyn indie"],
-      "href": "https://api.spotify.com/v1/artists/2uYWxilOVlUdk4oV9DvwqK",
-      "id": "2uYWxilOVlUdk4oV9DvwqK",
+      "followers": { "href": null, "total": 49446027 },
+      "genres": ["pop"],
+      "href": "https://api.spotify.com/v1/artists/06HL4z0CvFAxyc27GXpf02",
+      "id": "06HL4z0CvFAxyc27GXpf02",
       "images": [
         {
           "height": 640,
-          "url": "https://i.scdn.co/image/ab6761610000e5ebafb309e27fdb45e093958f9c",
+          "url": "https://i.scdn.co/image/ab6761610000e5eb9e3acf1eaf3b8846e836f441",
           "width": 640
         },
         {
           "height": 320,
-          "url": "https://i.scdn.co/image/ab67616100005174afb309e27fdb45e093958f9c",
+          "url": "https://i.scdn.co/image/ab676161000051749e3acf1eaf3b8846e836f441",
           "width": 320
         },
         {
           "height": 160,
-          "url": "https://i.scdn.co/image/ab6761610000f178afb309e27fdb45e093958f9c",
+          "url": "https://i.scdn.co/image/ab6761610000f1789e3acf1eaf3b8846e836f441",
           "width": 160
         }
       ],
-      "name": "Mitski",
-      "popularity": 85,
+      "name": "Taylor Swift",
+      "popularity": 98,
       "type": "artist",
-      "uri": "spotify:artist:2uYWxilOVlUdk4oV9DvwqK"
+      "uri": "spotify:artist:06HL4z0CvFAxyc27GXpf02"
     },
     {
       "external_urls": {
-        "spotify": "https://open.spotify.com/artist/6hG0VsXXlD10l60TqiIHIX"
+        "spotify": "https://open.spotify.com/artist/3gIRvgZssIb9aiirIg0nI3"
       },
-      "followers": { "href": null, "total": 129728 },
+      "followers": { "href": null, "total": 1912155 },
+      "genres": ["electropop", "pop"],
+      "href": "https://api.spotify.com/v1/artists/3gIRvgZssIb9aiirIg0nI3",
+      "id": "3gIRvgZssIb9aiirIg0nI3",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5eb97e6df979e0c39443a6aa0e4",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab6761610000517497e6df979e0c39443a6aa0e4",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f17897e6df979e0c39443a6aa0e4",
+          "width": 160
+        }
+      ],
+      "name": "Jeremy Zucker",
+      "popularity": 79,
+      "type": "artist",
+      "uri": "spotify:artist:3gIRvgZssIb9aiirIg0nI3"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/00TKPo9MxwZ0j4ooveIxWZ"
+      },
+      "followers": { "href": null, "total": 184366 },
       "genres": [
-        "escape room",
-        "glitchcore",
-        "hyperpop",
-        "underground hip hop"
-      ],
-      "href": "https://api.spotify.com/v1/artists/6hG0VsXXlD10l60TqiIHIX",
-      "id": "6hG0VsXXlD10l60TqiIHIX",
-      "images": [
-        {
-          "height": 640,
-          "url": "https://i.scdn.co/image/ab6761610000e5eba4caf4073b40cef9206c8012",
-          "width": 640
-        },
-        {
-          "height": 320,
-          "url": "https://i.scdn.co/image/ab67616100005174a4caf4073b40cef9206c8012",
-          "width": 320
-        },
-        {
-          "height": 160,
-          "url": "https://i.scdn.co/image/ab6761610000f178a4caf4073b40cef9206c8012",
-          "width": 160
-        }
-      ],
-      "name": "Ecco2k",
-      "popularity": 64,
-      "type": "artist",
-      "uri": "spotify:artist:6hG0VsXXlD10l60TqiIHIX"
-    },
-    {
-      "external_urls": {
-        "spotify": "https://open.spotify.com/artist/25uiPmTg16RbhZWAqwLBy5"
-      },
-      "followers": { "href": null, "total": 2549923 },
-      "genres": [
-        "art pop",
-        "candy pop",
+        "alt z",
         "dance pop",
         "electropop",
-        "metropopolis",
+        "indie poptimism",
+        "nyc pop",
         "pop",
+        "pop dance",
+        "pop edm",
         "post-teen pop",
-        "uk pop"
+        "tropical house"
       ],
-      "href": "https://api.spotify.com/v1/artists/25uiPmTg16RbhZWAqwLBy5",
-      "id": "25uiPmTg16RbhZWAqwLBy5",
+      "href": "https://api.spotify.com/v1/artists/00TKPo9MxwZ0j4ooveIxWZ",
+      "id": "00TKPo9MxwZ0j4ooveIxWZ",
       "images": [
         {
           "height": 640,
-          "url": "https://i.scdn.co/image/ab6761610000e5eb576cb43281160e345f728b71",
+          "url": "https://i.scdn.co/image/ab6761610000e5eb4faf8955163653dc8f0772c7",
           "width": 640
         },
         {
           "height": 320,
-          "url": "https://i.scdn.co/image/ab67616100005174576cb43281160e345f728b71",
+          "url": "https://i.scdn.co/image/ab676161000051744faf8955163653dc8f0772c7",
           "width": 320
         },
         {
           "height": 160,
-          "url": "https://i.scdn.co/image/ab6761610000f178576cb43281160e345f728b71",
+          "url": "https://i.scdn.co/image/ab6761610000f1784faf8955163653dc8f0772c7",
           "width": 160
         }
       ],
-      "name": "Charli XCX",
-      "popularity": 81,
-      "type": "artist",
-      "uri": "spotify:artist:25uiPmTg16RbhZWAqwLBy5"
-    },
-    {
-      "external_urls": {
-        "spotify": "https://open.spotify.com/artist/5RADpgYLOuS2ZxDq7ggYYH"
-      },
-      "followers": { "href": null, "total": 672251 },
-      "genres": [
-        "alternative hip hop",
-        "art pop",
-        "escape room",
-        "experimental hip hop",
-        "hip hop",
-        "industrial hip hop"
-      ],
-      "href": "https://api.spotify.com/v1/artists/5RADpgYLOuS2ZxDq7ggYYH",
-      "id": "5RADpgYLOuS2ZxDq7ggYYH",
-      "images": [
-        {
-          "height": 750,
-          "url": "https://i.scdn.co/image/b4421731b1edda8b8cc56bd74059305e3d3d3baf",
-          "width": 750
-        },
-        {
-          "height": 640,
-          "url": "https://i.scdn.co/image/6cf74eae3b622bdd8c8cbcb944a0cbb5abc1f337",
-          "width": 640
-        },
-        {
-          "height": 200,
-          "url": "https://i.scdn.co/image/44e99eba7959eb2855af390113e7f91ec5fb6280",
-          "width": 200
-        },
-        {
-          "height": 64,
-          "url": "https://i.scdn.co/image/c273232d77a9aa0d880e99e690021c2ed153f0f3",
-          "width": 64
-        }
-      ],
-      "name": "Death Grips",
-      "popularity": 64,
-      "type": "artist",
-      "uri": "spotify:artist:5RADpgYLOuS2ZxDq7ggYYH"
-    },
-    {
-      "external_urls": {
-        "spotify": "https://open.spotify.com/artist/053q0ukIDRgzwTr4vNSwab"
-      },
-      "followers": { "href": null, "total": 1598620 },
-      "genres": [
-        "art pop",
-        "canadian electropop",
-        "dance pop",
-        "electropop",
-        "grave wave",
-        "indietronica",
-        "metropopolis",
-        "pop"
-      ],
-      "href": "https://api.spotify.com/v1/artists/053q0ukIDRgzwTr4vNSwab",
-      "id": "053q0ukIDRgzwTr4vNSwab",
-      "images": [
-        {
-          "height": 640,
-          "url": "https://i.scdn.co/image/ab6761610000e5eb34771f759ca81a422f5f2b57",
-          "width": 640
-        },
-        {
-          "height": 320,
-          "url": "https://i.scdn.co/image/ab6761610000517434771f759ca81a422f5f2b57",
-          "width": 320
-        },
-        {
-          "height": 160,
-          "url": "https://i.scdn.co/image/ab6761610000f17834771f759ca81a422f5f2b57",
-          "width": 160
-        }
-      ],
-      "name": "Grimes",
-      "popularity": 73,
-      "type": "artist",
-      "uri": "spotify:artist:053q0ukIDRgzwTr4vNSwab"
-    },
-    {
-      "external_urls": {
-        "spotify": "https://open.spotify.com/artist/3yY2gUcIsjMr8hjo51PoJ8"
-      },
-      "followers": { "href": null, "total": 2963261 },
-      "genres": [
-        "madchester",
-        "new wave",
-        "permanent wave",
-        "rock",
-        "uk post-punk"
-      ],
-      "href": "https://api.spotify.com/v1/artists/3yY2gUcIsjMr8hjo51PoJ8",
-      "id": "3yY2gUcIsjMr8hjo51PoJ8",
-      "images": [
-        {
-          "height": 1516,
-          "url": "https://i.scdn.co/image/481b980af463122013e4578c08fb8c5cbfaed1e9",
-          "width": 1000
-        },
-        {
-          "height": 970,
-          "url": "https://i.scdn.co/image/4bf08a9e6eea088b20d4092d1322bbd3f39ff9af",
-          "width": 640
-        },
-        {
-          "height": 303,
-          "url": "https://i.scdn.co/image/bd4c7f5ff2c5c4385604e60c71eac1dd498ddbd9",
-          "width": 200
-        },
-        {
-          "height": 97,
-          "url": "https://i.scdn.co/image/d3a2542f2811b5b01ee3483ec7c193f72a882ea1",
-          "width": 64
-        }
-      ],
-      "name": "The Smiths",
-      "popularity": 76,
-      "type": "artist",
-      "uri": "spotify:artist:3yY2gUcIsjMr8hjo51PoJ8"
-    },
-    {
-      "external_urls": {
-        "spotify": "https://open.spotify.com/artist/6kBDZFXuLrZgHnvmPu9NsG"
-      },
-      "followers": { "href": null, "total": 850068 },
-      "genres": [
-        "ambient",
-        "braindance",
-        "electronica",
-        "intelligent dance music",
-        "uk experimental electronic"
-      ],
-      "href": "https://api.spotify.com/v1/artists/6kBDZFXuLrZgHnvmPu9NsG",
-      "id": "6kBDZFXuLrZgHnvmPu9NsG",
-      "images": [
-        {
-          "height": 640,
-          "url": "https://i.scdn.co/image/ab6761610000e5eb0ed68984dc1e96340205039e",
-          "width": 640
-        },
-        {
-          "height": 320,
-          "url": "https://i.scdn.co/image/ab676161000051740ed68984dc1e96340205039e",
-          "width": 320
-        },
-        {
-          "height": 160,
-          "url": "https://i.scdn.co/image/ab6761610000f1780ed68984dc1e96340205039e",
-          "width": 160
-        }
-      ],
-      "name": "Aphex Twin",
-      "popularity": 65,
-      "type": "artist",
-      "uri": "spotify:artist:6kBDZFXuLrZgHnvmPu9NsG"
-    },
-    {
-      "external_urls": {
-        "spotify": "https://open.spotify.com/artist/3Sz7ZnJQBIHsXLUSo0OQtM"
-      },
-      "followers": { "href": null, "total": 2440872 },
-      "genres": ["edmonton indie", "lo-fi indie"],
-      "href": "https://api.spotify.com/v1/artists/3Sz7ZnJQBIHsXLUSo0OQtM",
-      "id": "3Sz7ZnJQBIHsXLUSo0OQtM",
-      "images": [
-        {
-          "height": 640,
-          "url": "https://i.scdn.co/image/ab6761610000e5ebc7a7b191db13668f1a6d863d",
-          "width": 640
-        },
-        {
-          "height": 320,
-          "url": "https://i.scdn.co/image/ab67616100005174c7a7b191db13668f1a6d863d",
-          "width": 320
-        },
-        {
-          "height": 160,
-          "url": "https://i.scdn.co/image/ab6761610000f178c7a7b191db13668f1a6d863d",
-          "width": 160
-        }
-      ],
-      "name": "Mac DeMarco",
-      "popularity": 82,
-      "type": "artist",
-      "uri": "spotify:artist:3Sz7ZnJQBIHsXLUSo0OQtM"
-    },
-    {
-      "external_urls": {
-        "spotify": "https://open.spotify.com/artist/2h93pZq0e7k5yf4dywlkpM"
-      },
-      "followers": { "href": null, "total": 8959335 },
-      "genres": [
-        "alternative r&b",
-        "hip hop",
-        "lgbtq+ hip hop",
-        "neo soul",
-        "pop"
-      ],
-      "href": "https://api.spotify.com/v1/artists/2h93pZq0e7k5yf4dywlkpM",
-      "id": "2h93pZq0e7k5yf4dywlkpM",
-      "images": [
-        {
-          "height": 640,
-          "url": "https://i.scdn.co/image/ab6761610000e5ebfbc3faec4a370d8393bee7f1",
-          "width": 640
-        },
-        {
-          "height": 320,
-          "url": "https://i.scdn.co/image/ab67616100005174fbc3faec4a370d8393bee7f1",
-          "width": 320
-        },
-        {
-          "height": 160,
-          "url": "https://i.scdn.co/image/ab6761610000f178fbc3faec4a370d8393bee7f1",
-          "width": 160
-        }
-      ],
-      "name": "Frank Ocean",
-      "popularity": 87,
-      "type": "artist",
-      "uri": "spotify:artist:2h93pZq0e7k5yf4dywlkpM"
-    },
-    {
-      "external_urls": {
-        "spotify": "https://open.spotify.com/artist/2ApaG60P4r0yhBoDCGD8YG"
-      },
-      "followers": { "href": null, "total": 738026 },
-      "genres": [
-        "alternative rock",
-        "indie pop",
-        "indie rock",
-        "melancholia",
-        "singer-songwriter"
-      ],
-      "href": "https://api.spotify.com/v1/artists/2ApaG60P4r0yhBoDCGD8YG",
-      "id": "2ApaG60P4r0yhBoDCGD8YG",
-      "images": [
-        {
-          "height": 640,
-          "url": "https://i.scdn.co/image/ab6761610000e5eb079739b801ab3f105866b76f",
-          "width": 640
-        },
-        {
-          "height": 320,
-          "url": "https://i.scdn.co/image/ab67616100005174079739b801ab3f105866b76f",
-          "width": 320
-        },
-        {
-          "height": 160,
-          "url": "https://i.scdn.co/image/ab6761610000f178079739b801ab3f105866b76f",
-          "width": 160
-        }
-      ],
-      "name": "Elliott Smith",
+      "name": "Loote",
       "popularity": 66,
       "type": "artist",
-      "uri": "spotify:artist:2ApaG60P4r0yhBoDCGD8YG"
+      "uri": "spotify:artist:00TKPo9MxwZ0j4ooveIxWZ"
     },
     {
       "external_urls": {
-        "spotify": "https://open.spotify.com/artist/1WZarnZpWEv7dDtjAETt4X"
+        "spotify": "https://open.spotify.com/artist/5JZ7CnR6gTvEMKX4g70Amv"
       },
-      "followers": { "href": null, "total": 94946 },
-      "genres": ["ambient pop", "art pop", "escape room", "hyperpop"],
-      "href": "https://api.spotify.com/v1/artists/1WZarnZpWEv7dDtjAETt4X",
-      "id": "1WZarnZpWEv7dDtjAETt4X",
+      "followers": { "href": null, "total": 4840023 },
+      "genres": ["dance pop", "electropop", "pop"],
+      "href": "https://api.spotify.com/v1/artists/5JZ7CnR6gTvEMKX4g70Amv",
+      "id": "5JZ7CnR6gTvEMKX4g70Amv",
       "images": [
         {
           "height": 640,
-          "url": "https://i.scdn.co/image/ab6761610000e5ebf3582b14cc6b4f608f9a560f",
+          "url": "https://i.scdn.co/image/ab6761610000e5eb34e1fb819de8fe74fe431fd2",
           "width": 640
         },
         {
           "height": 320,
-          "url": "https://i.scdn.co/image/ab67616100005174f3582b14cc6b4f608f9a560f",
+          "url": "https://i.scdn.co/image/ab6761610000517434e1fb819de8fe74fe431fd2",
           "width": 320
         },
         {
           "height": 160,
-          "url": "https://i.scdn.co/image/ab6761610000f178f3582b14cc6b4f608f9a560f",
+          "url": "https://i.scdn.co/image/ab6761610000f17834e1fb819de8fe74fe431fd2",
           "width": 160
         }
       ],
-      "name": "yeule",
-      "popularity": 57,
+      "name": "Lauv",
+      "popularity": 82,
       "type": "artist",
-      "uri": "spotify:artist:1WZarnZpWEv7dDtjAETt4X"
+      "uri": "spotify:artist:5JZ7CnR6gTvEMKX4g70Amv"
     },
     {
       "external_urls": {
-        "spotify": "https://open.spotify.com/artist/3cGojc1Yu89IHXx8OeSnee"
+        "spotify": "https://open.spotify.com/artist/0ghlgldX5Dd6720Q3qFyQB"
       },
-      "followers": { "href": null, "total": 90467 },
-      "genres": ["glitchcore", "underground hip hop"],
-      "href": "https://api.spotify.com/v1/artists/3cGojc1Yu89IHXx8OeSnee",
-      "id": "3cGojc1Yu89IHXx8OeSnee",
+      "followers": { "href": null, "total": 5665667 },
+      "genres": ["k-pop", "k-pop boy group"],
+      "href": "https://api.spotify.com/v1/artists/0ghlgldX5Dd6720Q3qFyQB",
+      "id": "0ghlgldX5Dd6720Q3qFyQB",
       "images": [
         {
           "height": 640,
-          "url": "https://i.scdn.co/image/ab6761610000e5ebbe2dfe98c26ead5955f58bcf",
+          "url": "https://i.scdn.co/image/ab6761610000e5ebe808489e4855c3e16e4844c3",
           "width": 640
         },
         {
           "height": 320,
-          "url": "https://i.scdn.co/image/ab67616100005174be2dfe98c26ead5955f58bcf",
+          "url": "https://i.scdn.co/image/ab67616100005174e808489e4855c3e16e4844c3",
           "width": 320
         },
         {
           "height": 160,
-          "url": "https://i.scdn.co/image/ab6761610000f178be2dfe98c26ead5955f58bcf",
+          "url": "https://i.scdn.co/image/ab6761610000f178e808489e4855c3e16e4844c3",
           "width": 160
         }
       ],
-      "name": "Thaiboy Digital",
-      "popularity": 58,
+      "name": "TOMORROW X TOGETHER",
+      "popularity": 80,
       "type": "artist",
-      "uri": "spotify:artist:3cGojc1Yu89IHXx8OeSnee"
+      "uri": "spotify:artist:0ghlgldX5Dd6720Q3qFyQB"
     },
     {
       "external_urls": {
-        "spotify": "https://open.spotify.com/artist/5K4W6rqBFWDnAN6FQUkS6x"
+        "spotify": "https://open.spotify.com/artist/4DAcJXcjX0zlQAZAPAx4Zb"
       },
-      "followers": { "href": null, "total": 16425452 },
-      "genres": ["chicago rap", "rap"],
-      "href": "https://api.spotify.com/v1/artists/5K4W6rqBFWDnAN6FQUkS6x",
-      "id": "5K4W6rqBFWDnAN6FQUkS6x",
+      "followers": { "href": null, "total": 4773166 },
+      "genres": ["opm"],
+      "href": "https://api.spotify.com/v1/artists/4DAcJXcjX0zlQAZAPAx4Zb",
+      "id": "4DAcJXcjX0zlQAZAPAx4Zb",
       "images": [
         {
           "height": 640,
-          "url": "https://i.scdn.co/image/ab6761610000e5eb867008a971fae0f4d913f63a",
+          "url": "https://i.scdn.co/image/ab6761610000e5eb80e7c24a90d629c98d4dfa8f",
           "width": 640
         },
         {
           "height": 320,
-          "url": "https://i.scdn.co/image/ab67616100005174867008a971fae0f4d913f63a",
+          "url": "https://i.scdn.co/image/ab6761610000517480e7c24a90d629c98d4dfa8f",
           "width": 320
         },
         {
           "height": 160,
-          "url": "https://i.scdn.co/image/ab6761610000f178867008a971fae0f4d913f63a",
+          "url": "https://i.scdn.co/image/ab6761610000f17880e7c24a90d629c98d4dfa8f",
           "width": 160
         }
       ],
-      "name": "Kanye West",
-      "popularity": 95,
+      "name": "Ben&Ben",
+      "popularity": 72,
       "type": "artist",
-      "uri": "spotify:artist:5K4W6rqBFWDnAN6FQUkS6x"
+      "uri": "spotify:artist:4DAcJXcjX0zlQAZAPAx4Zb"
     },
     {
       "external_urls": {
-        "spotify": "https://open.spotify.com/artist/13ubrt8QOOCPljQ2FL1Kca"
+        "spotify": "https://open.spotify.com/artist/1EowJ1WwkMzkCkRomFhui7"
       },
-      "followers": { "href": null, "total": 10664774 },
-      "genres": ["east coast hip hop", "hip hop", "rap", "trap"],
-      "href": "https://api.spotify.com/v1/artists/13ubrt8QOOCPljQ2FL1Kca",
-      "id": "13ubrt8QOOCPljQ2FL1Kca",
+      "followers": { "href": null, "total": 2712009 },
+      "genres": ["j-pop", "j-rock", "japanese emo", "visual kei"],
+      "href": "https://api.spotify.com/v1/artists/1EowJ1WwkMzkCkRomFhui7",
+      "id": "1EowJ1WwkMzkCkRomFhui7",
       "images": [
         {
           "height": 640,
-          "url": "https://i.scdn.co/image/ab6761610000e5eb6d5529e3962a16bd267bfeb2",
+          "url": "https://i.scdn.co/image/ab6761610000e5eb6755550137cbb7974ea87363",
           "width": 640
         },
         {
           "height": 320,
-          "url": "https://i.scdn.co/image/ab676161000051746d5529e3962a16bd267bfeb2",
+          "url": "https://i.scdn.co/image/ab676161000051746755550137cbb7974ea87363",
           "width": 320
         },
         {
           "height": 160,
-          "url": "https://i.scdn.co/image/ab6761610000f1786d5529e3962a16bd267bfeb2",
+          "url": "https://i.scdn.co/image/ab6761610000f1786755550137cbb7974ea87363",
           "width": 160
         }
       ],
-      "name": "A$AP Rocky",
+      "name": "RADWIMPS",
+      "popularity": 72,
+      "type": "artist",
+      "uri": "spotify:artist:1EowJ1WwkMzkCkRomFhui7"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/0qlWcS66ohOIi0M8JZwPft"
+      },
+      "followers": { "href": null, "total": 1324176 },
+      "genres": ["k-pop", "k-pop girl group"],
+      "href": "https://api.spotify.com/v1/artists/0qlWcS66ohOIi0M8JZwPft",
+      "id": "0qlWcS66ohOIi0M8JZwPft",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5ebd0701912e6fccf8427bc7361",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab67616100005174d0701912e6fccf8427bc7361",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f178d0701912e6fccf8427bc7361",
+          "width": 160
+        }
+      ],
+      "name": "GFRIEND",
+      "popularity": 65,
+      "type": "artist",
+      "uri": "spotify:artist:0qlWcS66ohOIi0M8JZwPft"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/6KImCVD70vtIoJWnq6nGn3"
+      },
+      "followers": { "href": null, "total": 19059896 },
+      "genres": ["pop"],
+      "href": "https://api.spotify.com/v1/artists/6KImCVD70vtIoJWnq6nGn3",
+      "id": "6KImCVD70vtIoJWnq6nGn3",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5ebd9f70439ec8893ef495e1b7e",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab67616100005174d9f70439ec8893ef495e1b7e",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f178d9f70439ec8893ef495e1b7e",
+          "width": 160
+        }
+      ],
+      "name": "Harry Styles",
       "popularity": 87,
       "type": "artist",
-      "uri": "spotify:artist:13ubrt8QOOCPljQ2FL1Kca"
-    },
-    {
-      "external_urls": {
-        "spotify": "https://open.spotify.com/artist/4wyNyxs74Ux8UIDopNjIai"
-      },
-      "followers": { "href": null, "total": 644962 },
-      "genres": ["uk alternative pop"],
-      "href": "https://api.spotify.com/v1/artists/4wyNyxs74Ux8UIDopNjIai",
-      "id": "4wyNyxs74Ux8UIDopNjIai",
-      "images": [
-        {
-          "height": 640,
-          "url": "https://i.scdn.co/image/ab6761610000e5ebe6cfa98e824a988e87ad66a2",
-          "width": 640
-        },
-        {
-          "height": 320,
-          "url": "https://i.scdn.co/image/ab67616100005174e6cfa98e824a988e87ad66a2",
-          "width": 320
-        },
-        {
-          "height": 160,
-          "url": "https://i.scdn.co/image/ab6761610000f178e6cfa98e824a988e87ad66a2",
-          "width": 160
-        }
-      ],
-      "name": "King Krule",
-      "popularity": 62,
-      "type": "artist",
-      "uri": "spotify:artist:4wyNyxs74Ux8UIDopNjIai"
+      "uri": "spotify:artist:6KImCVD70vtIoJWnq6nGn3"
     },
     {
       "external_urls": {
         "spotify": "https://open.spotify.com/artist/4MXUO7sVCaFgFjoTI5ox5c"
       },
-      "followers": { "href": null, "total": 1481194 },
+      "followers": { "href": null, "total": 1482741 },
       "genres": [
         "baroque pop",
         "chamber pop",
@@ -606,1058 +373,315 @@
         }
       ],
       "name": "Sufjan Stevens",
-      "popularity": 75,
+      "popularity": 74,
       "type": "artist",
       "uri": "spotify:artist:4MXUO7sVCaFgFjoTI5ox5c"
     },
     {
       "external_urls": {
-        "spotify": "https://open.spotify.com/artist/6PfSUFtkMVoDkx4MQkzOi3"
+        "spotify": "https://open.spotify.com/artist/639kduoUmDR7ISY0QF6WlX"
       },
-      "followers": { "href": null, "total": 450507 },
-      "genres": ["escape room", "hyperpop"],
-      "href": "https://api.spotify.com/v1/artists/6PfSUFtkMVoDkx4MQkzOi3",
-      "id": "6PfSUFtkMVoDkx4MQkzOi3",
+      "followers": { "href": null, "total": 12266 },
+      "genres": ["pinoy indie"],
+      "href": "https://api.spotify.com/v1/artists/639kduoUmDR7ISY0QF6WlX",
+      "id": "639kduoUmDR7ISY0QF6WlX",
       "images": [
         {
           "height": 640,
-          "url": "https://i.scdn.co/image/ab6761610000e5ebd77a9c855001f3a9b5815bc0",
+          "url": "https://i.scdn.co/image/ab6761610000e5eb71d10bac26e73b6d663b24fa",
           "width": 640
         },
         {
           "height": 320,
-          "url": "https://i.scdn.co/image/ab67616100005174d77a9c855001f3a9b5815bc0",
+          "url": "https://i.scdn.co/image/ab6761610000517471d10bac26e73b6d663b24fa",
           "width": 320
         },
         {
           "height": 160,
-          "url": "https://i.scdn.co/image/ab6761610000f178d77a9c855001f3a9b5815bc0",
+          "url": "https://i.scdn.co/image/ab6761610000f17871d10bac26e73b6d663b24fa",
           "width": 160
         }
       ],
-      "name": "100 gecs",
-      "popularity": 66,
+      "name": "Martti Franca",
+      "popularity": 41,
       "type": "artist",
-      "uri": "spotify:artist:6PfSUFtkMVoDkx4MQkzOi3"
+      "uri": "spotify:artist:639kduoUmDR7ISY0QF6WlX"
     },
     {
       "external_urls": {
-        "spotify": "https://open.spotify.com/artist/7K3zpFXBvPcvzhj7zlGJdO"
+        "spotify": "https://open.spotify.com/artist/5Pwc4xIPtQLFEnJriah9YJ"
       },
-      "followers": { "href": null, "total": 1138636 },
-      "genres": [
-        "alternative dance",
-        "bitpop",
-        "digital hardcore",
-        "indietronica",
-        "neo-synthpop",
-        "new rave",
-        "nintendocore"
-      ],
-      "href": "https://api.spotify.com/v1/artists/7K3zpFXBvPcvzhj7zlGJdO",
-      "id": "7K3zpFXBvPcvzhj7zlGJdO",
-      "images": [
-        {
-          "height": 1000,
-          "url": "https://i.scdn.co/image/5419a05563a9ba8cb16fe207199c298f621eef85",
-          "width": 1000
-        },
-        {
-          "height": 640,
-          "url": "https://i.scdn.co/image/d90a0865e8bca5e5084049e8adc3485b3880848e",
-          "width": 640
-        },
-        {
-          "height": 200,
-          "url": "https://i.scdn.co/image/455a70605e44303c96a4438012598e5ac0260d58",
-          "width": 200
-        },
-        {
-          "height": 64,
-          "url": "https://i.scdn.co/image/8b202585f9dedf2f7e73dc80cac8ba40e941e7ff",
-          "width": 64
-        }
-      ],
-      "name": "Crystal Castles",
-      "popularity": 70,
-      "type": "artist",
-      "uri": "spotify:artist:7K3zpFXBvPcvzhj7zlGJdO"
-    },
-    {
-      "external_urls": {
-        "spotify": "https://open.spotify.com/artist/0epOFNiUfyON9EYx7Tpr6V"
-      },
-      "followers": { "href": null, "total": 4187032 },
-      "genres": [
-        "alternative rock",
-        "garage rock",
-        "modern rock",
-        "permanent wave",
-        "rock"
-      ],
-      "href": "https://api.spotify.com/v1/artists/0epOFNiUfyON9EYx7Tpr6V",
-      "id": "0epOFNiUfyON9EYx7Tpr6V",
+      "followers": { "href": null, "total": 13194694 },
+      "genres": ["dance pop", "piano rock", "pop", "pop rock"],
+      "href": "https://api.spotify.com/v1/artists/5Pwc4xIPtQLFEnJriah9YJ",
+      "id": "5Pwc4xIPtQLFEnJriah9YJ",
       "images": [
         {
           "height": 640,
-          "url": "https://i.scdn.co/image/ab6761610000e5eb64d74f5985cb66b2f7b60e93",
+          "url": "https://i.scdn.co/image/ab6761610000e5eb15b390722c471fdfd32d1f89",
           "width": 640
         },
         {
           "height": 320,
-          "url": "https://i.scdn.co/image/ab6761610000517464d74f5985cb66b2f7b60e93",
+          "url": "https://i.scdn.co/image/ab6761610000517415b390722c471fdfd32d1f89",
           "width": 320
         },
         {
           "height": 160,
-          "url": "https://i.scdn.co/image/ab6761610000f17864d74f5985cb66b2f7b60e93",
+          "url": "https://i.scdn.co/image/ab6761610000f17815b390722c471fdfd32d1f89",
           "width": 160
         }
       ],
-      "name": "The Strokes",
-      "popularity": 79,
+      "name": "OneRepublic",
+      "popularity": 85,
       "type": "artist",
-      "uri": "spotify:artist:0epOFNiUfyON9EYx7Tpr6V"
+      "uri": "spotify:artist:5Pwc4xIPtQLFEnJriah9YJ"
     },
     {
       "external_urls": {
-        "spotify": "https://open.spotify.com/artist/67lytN32YpUxiSeWlKfHJ3"
+        "spotify": "https://open.spotify.com/artist/511vWnluvbgTL9TDgqlwVZ"
       },
-      "followers": { "href": null, "total": 690968 },
-      "genres": ["psychedelic hip hop", "underground hip hop"],
-      "href": "https://api.spotify.com/v1/artists/67lytN32YpUxiSeWlKfHJ3",
-      "id": "67lytN32YpUxiSeWlKfHJ3",
+      "followers": { "href": null, "total": 6681 },
+      "genres": [],
+      "href": "https://api.spotify.com/v1/artists/511vWnluvbgTL9TDgqlwVZ",
+      "id": "511vWnluvbgTL9TDgqlwVZ",
       "images": [
         {
           "height": 640,
-          "url": "https://i.scdn.co/image/ab6761610000e5ebb4435845acb9da6f206af96c",
+          "url": "https://i.scdn.co/image/ab6761610000e5eb6627ab279b9cf1c3f594aa9f",
           "width": 640
         },
         {
           "height": 320,
-          "url": "https://i.scdn.co/image/ab67616100005174b4435845acb9da6f206af96c",
+          "url": "https://i.scdn.co/image/ab676161000051746627ab279b9cf1c3f594aa9f",
           "width": 320
         },
         {
           "height": 160,
-          "url": "https://i.scdn.co/image/ab6761610000f178b4435845acb9da6f206af96c",
+          "url": "https://i.scdn.co/image/ab6761610000f1786627ab279b9cf1c3f594aa9f",
           "width": 160
         }
       ],
-      "name": "Yung Lean",
-      "popularity": 77,
+      "name": "Edward Ong",
+      "popularity": 57,
       "type": "artist",
-      "uri": "spotify:artist:67lytN32YpUxiSeWlKfHJ3"
+      "uri": "spotify:artist:511vWnluvbgTL9TDgqlwVZ"
     },
     {
       "external_urls": {
-        "spotify": "https://open.spotify.com/artist/4QM5QCHicznALtX885CnZC"
+        "spotify": "https://open.spotify.com/artist/5RmQ8k4l3HZ8JoPb4mNsML"
       },
-      "followers": { "href": null, "total": 253363 },
-      "genres": [
-        "art pop",
-        "dance pop",
-        "electropop",
-        "escape room",
-        "hyperpop",
-        "pink noise",
-        "pop"
-      ],
-      "href": "https://api.spotify.com/v1/artists/4QM5QCHicznALtX885CnZC",
-      "id": "4QM5QCHicznALtX885CnZC",
+      "followers": { "href": null, "total": 7587814 },
+      "genres": ["k-rap"],
+      "href": "https://api.spotify.com/v1/artists/5RmQ8k4l3HZ8JoPb4mNsML",
+      "id": "5RmQ8k4l3HZ8JoPb4mNsML",
       "images": [
         {
           "height": 640,
-          "url": "https://i.scdn.co/image/ab6761610000e5ebd01fb7eccf3f995adbf7d40d",
+          "url": "https://i.scdn.co/image/ab6761610000e5ebe94c521bbe0604a5fcd4f8bf",
           "width": 640
         },
         {
           "height": 320,
-          "url": "https://i.scdn.co/image/ab67616100005174d01fb7eccf3f995adbf7d40d",
+          "url": "https://i.scdn.co/image/ab67616100005174e94c521bbe0604a5fcd4f8bf",
           "width": 320
         },
         {
           "height": 160,
-          "url": "https://i.scdn.co/image/ab6761610000f178d01fb7eccf3f995adbf7d40d",
+          "url": "https://i.scdn.co/image/ab6761610000f178e94c521bbe0604a5fcd4f8bf",
           "width": 160
         }
       ],
-      "name": "Slayyyter",
-      "popularity": 64,
-      "type": "artist",
-      "uri": "spotify:artist:4QM5QCHicznALtX885CnZC"
-    },
-    {
-      "external_urls": {
-        "spotify": "https://open.spotify.com/artist/6sFIWsNpZYqfjUpaCgueju"
-      },
-      "followers": { "href": null, "total": 4908706 },
-      "genres": [
-        "canadian pop",
-        "dance pop",
-        "electropop",
-        "indie poptimism",
-        "pop",
-        "post-teen pop"
-      ],
-      "href": "https://api.spotify.com/v1/artists/6sFIWsNpZYqfjUpaCgueju",
-      "id": "6sFIWsNpZYqfjUpaCgueju",
-      "images": [
-        {
-          "height": 640,
-          "url": "https://i.scdn.co/image/ab6761610000e5eb71fed7c1f401da1662f209cb",
-          "width": 640
-        },
-        {
-          "height": 320,
-          "url": "https://i.scdn.co/image/ab6761610000517471fed7c1f401da1662f209cb",
-          "width": 320
-        },
-        {
-          "height": 160,
-          "url": "https://i.scdn.co/image/ab6761610000f17871fed7c1f401da1662f209cb",
-          "width": 160
-        }
-      ],
-      "name": "Carly Rae Jepsen",
-      "popularity": 75,
-      "type": "artist",
-      "uri": "spotify:artist:6sFIWsNpZYqfjUpaCgueju"
-    },
-    {
-      "external_urls": {
-        "spotify": "https://open.spotify.com/artist/3pc0bOVB5whxmD50W79wwO"
-      },
-      "followers": { "href": null, "total": 1448015 },
-      "genres": ["chill r&b", "pop"],
-      "href": "https://api.spotify.com/v1/artists/3pc0bOVB5whxmD50W79wwO",
-      "id": "3pc0bOVB5whxmD50W79wwO",
-      "images": [
-        {
-          "height": 640,
-          "url": "https://i.scdn.co/image/ab6761610000e5ebd969cf117d0b0d4424bebdc5",
-          "width": 640
-        },
-        {
-          "height": 320,
-          "url": "https://i.scdn.co/image/ab67616100005174d969cf117d0b0d4424bebdc5",
-          "width": 320
-        },
-        {
-          "height": 160,
-          "url": "https://i.scdn.co/image/ab6761610000f178d969cf117d0b0d4424bebdc5",
-          "width": 160
-        }
-      ],
-      "name": "keshi",
-      "popularity": 78,
-      "type": "artist",
-      "uri": "spotify:artist:3pc0bOVB5whxmD50W79wwO"
-    },
-    {
-      "external_urls": {
-        "spotify": "https://open.spotify.com/artist/163tK9Wjr9P9DmM0AVK7lm"
-      },
-      "followers": { "href": null, "total": 9025229 },
-      "genres": ["art pop", "electropop", "metropopolis", "nz pop", "pop"],
-      "href": "https://api.spotify.com/v1/artists/163tK9Wjr9P9DmM0AVK7lm",
-      "id": "163tK9Wjr9P9DmM0AVK7lm",
-      "images": [
-        {
-          "height": 640,
-          "url": "https://i.scdn.co/image/ab6761610000e5ebc4902f080d3620b3e6da80c3",
-          "width": 640
-        },
-        {
-          "height": 320,
-          "url": "https://i.scdn.co/image/ab67616100005174c4902f080d3620b3e6da80c3",
-          "width": 320
-        },
-        {
-          "height": 160,
-          "url": "https://i.scdn.co/image/ab6761610000f178c4902f080d3620b3e6da80c3",
-          "width": 160
-        }
-      ],
-      "name": "Lorde",
-      "popularity": 81,
-      "type": "artist",
-      "uri": "spotify:artist:163tK9Wjr9P9DmM0AVK7lm"
-    },
-    {
-      "external_urls": {
-        "spotify": "https://open.spotify.com/artist/6ignRjbPmLvKdtMLj9a5Xs"
-      },
-      "followers": { "href": null, "total": 131194 },
-      "genres": ["j-acoustic"],
-      "href": "https://api.spotify.com/v1/artists/6ignRjbPmLvKdtMLj9a5Xs",
-      "id": "6ignRjbPmLvKdtMLj9a5Xs",
-      "images": [
-        {
-          "height": 640,
-          "url": "https://i.scdn.co/image/ab6761610000e5ebd6907195566ae3870d38ca15",
-          "width": 640
-        },
-        {
-          "height": 320,
-          "url": "https://i.scdn.co/image/ab67616100005174d6907195566ae3870d38ca15",
-          "width": 320
-        },
-        {
-          "height": 160,
-          "url": "https://i.scdn.co/image/ab6761610000f178d6907195566ae3870d38ca15",
-          "width": 160
-        }
-      ],
-      "name": "Ichiko Aoba",
-      "popularity": 56,
-      "type": "artist",
-      "uri": "spotify:artist:6ignRjbPmLvKdtMLj9a5Xs"
-    },
-    {
-      "external_urls": {
-        "spotify": "https://open.spotify.com/artist/1Bl6wpkWCQ4KVgnASpvzzA"
-      },
-      "followers": { "href": null, "total": 1935345 },
-      "genres": ["boy band", "hip hop", "pop", "rap"],
-      "href": "https://api.spotify.com/v1/artists/1Bl6wpkWCQ4KVgnASpvzzA",
-      "id": "1Bl6wpkWCQ4KVgnASpvzzA",
-      "images": [
-        {
-          "height": 640,
-          "url": "https://i.scdn.co/image/ab6761610000e5ebdc3c21f68fa721ebcf439dae",
-          "width": 640
-        },
-        {
-          "height": 320,
-          "url": "https://i.scdn.co/image/ab67616100005174dc3c21f68fa721ebcf439dae",
-          "width": 320
-        },
-        {
-          "height": 160,
-          "url": "https://i.scdn.co/image/ab6761610000f178dc3c21f68fa721ebcf439dae",
-          "width": 160
-        }
-      ],
-      "name": "BROCKHAMPTON",
-      "popularity": 75,
-      "type": "artist",
-      "uri": "spotify:artist:1Bl6wpkWCQ4KVgnASpvzzA"
-    },
-    {
-      "external_urls": {
-        "spotify": "https://open.spotify.com/artist/2QpNu8tDPv9n7oY34J1TtN"
-      },
-      "followers": { "href": null, "total": 146682 },
-      "genres": ["glitchcore", "hyperpop"],
-      "href": "https://api.spotify.com/v1/artists/2QpNu8tDPv9n7oY34J1TtN",
-      "id": "2QpNu8tDPv9n7oY34J1TtN",
-      "images": [
-        {
-          "height": 640,
-          "url": "https://i.scdn.co/image/ab6761610000e5eb4e14f027ec24b91d5be6872e",
-          "width": 640
-        },
-        {
-          "height": 320,
-          "url": "https://i.scdn.co/image/ab676161000051744e14f027ec24b91d5be6872e",
-          "width": 320
-        },
-        {
-          "height": 160,
-          "url": "https://i.scdn.co/image/ab6761610000f1784e14f027ec24b91d5be6872e",
-          "width": 160
-        }
-      ],
-      "name": "quinn",
-      "popularity": 60,
-      "type": "artist",
-      "uri": "spotify:artist:2QpNu8tDPv9n7oY34J1TtN"
-    },
-    {
-      "external_urls": {
-        "spotify": "https://open.spotify.com/artist/3l0CmX0FuQjFxr8SK7Vqag"
-      },
-      "followers": { "href": null, "total": 3093902 },
-      "genres": ["bedroom pop", "indie pop", "pop"],
-      "href": "https://api.spotify.com/v1/artists/3l0CmX0FuQjFxr8SK7Vqag",
-      "id": "3l0CmX0FuQjFxr8SK7Vqag",
-      "images": [
-        {
-          "height": 640,
-          "url": "https://i.scdn.co/image/ab6761610000e5eb370f4e30deba6da178db36fe",
-          "width": 640
-        },
-        {
-          "height": 320,
-          "url": "https://i.scdn.co/image/ab67616100005174370f4e30deba6da178db36fe",
-          "width": 320
-        },
-        {
-          "height": 160,
-          "url": "https://i.scdn.co/image/ab6761610000f178370f4e30deba6da178db36fe",
-          "width": 160
-        }
-      ],
-      "name": "Clairo",
-      "popularity": 81,
-      "type": "artist",
-      "uri": "spotify:artist:3l0CmX0FuQjFxr8SK7Vqag"
-    },
-    {
-      "external_urls": {
-        "spotify": "https://open.spotify.com/artist/5PbpKlxQE0Ktl5lcNABoFf"
-      },
-      "followers": { "href": null, "total": 436979 },
-      "genres": ["alternative rock", "indie pop", "indie rock"],
-      "href": "https://api.spotify.com/v1/artists/5PbpKlxQE0Ktl5lcNABoFf",
-      "id": "5PbpKlxQE0Ktl5lcNABoFf",
-      "images": [
-        {
-          "height": 640,
-          "url": "https://i.scdn.co/image/ab6761610000e5eb592a703f8e58df5e1176f6ff",
-          "width": 640
-        },
-        {
-          "height": 320,
-          "url": "https://i.scdn.co/image/ab67616100005174592a703f8e58df5e1176f6ff",
-          "width": 320
-        },
-        {
-          "height": 160,
-          "url": "https://i.scdn.co/image/ab6761610000f178592a703f8e58df5e1176f6ff",
-          "width": 160
-        }
-      ],
-      "name": "Car Seat Headrest",
-      "popularity": 65,
-      "type": "artist",
-      "uri": "spotify:artist:5PbpKlxQE0Ktl5lcNABoFf"
-    },
-    {
-      "external_urls": {
-        "spotify": "https://open.spotify.com/artist/7A2xUGz3Mbq2tJdMfILN34"
-      },
-      "followers": { "href": null, "total": 21132 },
-      "genres": ["glitchcore"],
-      "href": "https://api.spotify.com/v1/artists/7A2xUGz3Mbq2tJdMfILN34",
-      "id": "7A2xUGz3Mbq2tJdMfILN34",
-      "images": [
-        {
-          "height": 640,
-          "url": "https://i.scdn.co/image/ab6761610000e5ebbc50a392550e4236ffb8f7d0",
-          "width": 640
-        },
-        {
-          "height": 320,
-          "url": "https://i.scdn.co/image/ab67616100005174bc50a392550e4236ffb8f7d0",
-          "width": 320
-        },
-        {
-          "height": 160,
-          "url": "https://i.scdn.co/image/ab6761610000f178bc50a392550e4236ffb8f7d0",
-          "width": 160
-        }
-      ],
-      "name": "Mixed Matches",
-      "popularity": 52,
-      "type": "artist",
-      "uri": "spotify:artist:7A2xUGz3Mbq2tJdMfILN34"
-    },
-    {
-      "external_urls": {
-        "spotify": "https://open.spotify.com/artist/6LEeAFiJF8OuPx747e1wxR"
-      },
-      "followers": { "href": null, "total": 658234 },
-      "genres": [
-        "alternative r&b",
-        "art pop",
-        "chillwave",
-        "electropop",
-        "escape room",
-        "indie soul",
-        "metropopolis"
-      ],
-      "href": "https://api.spotify.com/v1/artists/6LEeAFiJF8OuPx747e1wxR",
-      "id": "6LEeAFiJF8OuPx747e1wxR",
-      "images": [
-        {
-          "height": 640,
-          "url": "https://i.scdn.co/image/ab6761610000e5eb8d20953fcf7d70b21df8dbee",
-          "width": 640
-        },
-        {
-          "height": 320,
-          "url": "https://i.scdn.co/image/ab676161000051748d20953fcf7d70b21df8dbee",
-          "width": 320
-        },
-        {
-          "height": 160,
-          "url": "https://i.scdn.co/image/ab6761610000f1788d20953fcf7d70b21df8dbee",
-          "width": 160
-        }
-      ],
-      "name": "Blood Orange",
-      "popularity": 66,
-      "type": "artist",
-      "uri": "spotify:artist:6LEeAFiJF8OuPx747e1wxR"
-    },
-    {
-      "external_urls": {
-        "spotify": "https://open.spotify.com/artist/3x3jSlhyv5CiCZDZlaTq0M"
-      },
-      "followers": { "href": null, "total": 615241 },
-      "genres": ["melodic rap", "pluggnb", "rap", "trap", "vapor trap"],
-      "href": "https://api.spotify.com/v1/artists/3x3jSlhyv5CiCZDZlaTq0M",
-      "id": "3x3jSlhyv5CiCZDZlaTq0M",
-      "images": [
-        {
-          "height": 640,
-          "url": "https://i.scdn.co/image/ab6761610000e5eb057015e505454bc625940dc3",
-          "width": 640
-        },
-        {
-          "height": 320,
-          "url": "https://i.scdn.co/image/ab67616100005174057015e505454bc625940dc3",
-          "width": 320
-        },
-        {
-          "height": 160,
-          "url": "https://i.scdn.co/image/ab6761610000f178057015e505454bc625940dc3",
-          "width": 160
-        }
-      ],
-      "name": "Pi’erre Bourne",
+      "name": "Agust D",
       "popularity": 71,
       "type": "artist",
-      "uri": "spotify:artist:3x3jSlhyv5CiCZDZlaTq0M"
+      "uri": "spotify:artist:5RmQ8k4l3HZ8JoPb4mNsML"
     },
     {
       "external_urls": {
-        "spotify": "https://open.spotify.com/artist/6yJ6QQ3Y5l0s0tn7b0arrO"
+        "spotify": "https://open.spotify.com/artist/72nLe76yBFSlP6VBzME358"
       },
-      "followers": { "href": null, "total": 455602 },
-      "genres": [
-        "alternative hip hop",
-        "escape room",
-        "experimental hip hop",
-        "hip hop",
-        "industrial hip hop",
-        "rap",
-        "underground hip hop"
-      ],
-      "href": "https://api.spotify.com/v1/artists/6yJ6QQ3Y5l0s0tn7b0arrO",
-      "id": "6yJ6QQ3Y5l0s0tn7b0arrO",
+      "followers": { "href": null, "total": 307114 },
+      "genres": ["k-pop"],
+      "href": "https://api.spotify.com/v1/artists/72nLe76yBFSlP6VBzME358",
+      "id": "72nLe76yBFSlP6VBzME358",
       "images": [
         {
           "height": 640,
-          "url": "https://i.scdn.co/image/ab6761610000e5eb9c61c2bf0678c5947bf38f8f",
+          "url": "https://i.scdn.co/image/ab6761610000e5eb442d311c27b15f9022905938",
           "width": 640
         },
         {
           "height": 320,
-          "url": "https://i.scdn.co/image/ab676161000051749c61c2bf0678c5947bf38f8f",
+          "url": "https://i.scdn.co/image/ab67616100005174442d311c27b15f9022905938",
           "width": 320
         },
         {
           "height": 160,
-          "url": "https://i.scdn.co/image/ab6761610000f1789c61c2bf0678c5947bf38f8f",
+          "url": "https://i.scdn.co/image/ab6761610000f178442d311c27b15f9022905938",
           "width": 160
         }
       ],
-      "name": "JPEGMAFIA",
-      "popularity": 67,
+      "name": "SHAUN",
+      "popularity": 66,
       "type": "artist",
-      "uri": "spotify:artist:6yJ6QQ3Y5l0s0tn7b0arrO"
+      "uri": "spotify:artist:72nLe76yBFSlP6VBzME358"
     },
     {
       "external_urls": {
-        "spotify": "https://open.spotify.com/artist/4Z8W4fKeB5YxbusRsdQVPb"
+        "spotify": "https://open.spotify.com/artist/47mIJdHORyRerp4os813jD"
       },
-      "followers": { "href": null, "total": 6799151 },
-      "genres": [
-        "alternative rock",
-        "art rock",
-        "melancholia",
-        "oxford indie",
-        "permanent wave",
-        "rock"
-      ],
-      "href": "https://api.spotify.com/v1/artists/4Z8W4fKeB5YxbusRsdQVPb",
-      "id": "4Z8W4fKeB5YxbusRsdQVPb",
+      "followers": { "href": null, "total": 1336033 },
+      "genres": ["speedrun", "video game music"],
+      "href": "https://api.spotify.com/v1/artists/47mIJdHORyRerp4os813jD",
+      "id": "47mIJdHORyRerp4os813jD",
       "images": [
         {
           "height": 640,
-          "url": "https://i.scdn.co/image/ab6761610000e5eba03696716c9ee605006047fd",
+          "url": "https://i.scdn.co/image/ab6761610000e5eba11bcaedaaa395560c26a4ff",
           "width": 640
         },
         {
           "height": 320,
-          "url": "https://i.scdn.co/image/ab67616100005174a03696716c9ee605006047fd",
+          "url": "https://i.scdn.co/image/ab67616100005174a11bcaedaaa395560c26a4ff",
           "width": 320
         },
         {
           "height": 160,
-          "url": "https://i.scdn.co/image/ab6761610000f178a03696716c9ee605006047fd",
+          "url": "https://i.scdn.co/image/ab6761610000f178a11bcaedaaa395560c26a4ff",
           "width": 160
         }
       ],
-      "name": "Radiohead",
-      "popularity": 81,
+      "name": "League of Legends",
+      "popularity": 88,
       "type": "artist",
-      "uri": "spotify:artist:4Z8W4fKeB5YxbusRsdQVPb"
+      "uri": "spotify:artist:47mIJdHORyRerp4os813jD"
     },
     {
       "external_urls": {
-        "spotify": "https://open.spotify.com/artist/2RqrWplViWHSGLzlhmDcbt"
+        "spotify": "https://open.spotify.com/artist/7n2Ycct7Beij7Dj7meI4X0"
       },
-      "followers": { "href": null, "total": 325595 },
-      "genres": ["art pop", "escape room", "experimental house"],
-      "href": "https://api.spotify.com/v1/artists/2RqrWplViWHSGLzlhmDcbt",
-      "id": "2RqrWplViWHSGLzlhmDcbt",
+      "followers": { "href": null, "total": 12481963 },
+      "genres": ["k-pop", "k-pop girl group"],
+      "href": "https://api.spotify.com/v1/artists/7n2Ycct7Beij7Dj7meI4X0",
+      "id": "7n2Ycct7Beij7Dj7meI4X0",
       "images": [
         {
           "height": 640,
-          "url": "https://i.scdn.co/image/ab6761610000e5eb7198bb278603f3c583034e86",
+          "url": "https://i.scdn.co/image/ab6761610000e5eb464ef353e1a7c72f67de8158",
           "width": 640
         },
         {
           "height": 320,
-          "url": "https://i.scdn.co/image/ab676161000051747198bb278603f3c583034e86",
+          "url": "https://i.scdn.co/image/ab67616100005174464ef353e1a7c72f67de8158",
           "width": 320
         },
         {
           "height": 160,
-          "url": "https://i.scdn.co/image/ab6761610000f1787198bb278603f3c583034e86",
+          "url": "https://i.scdn.co/image/ab6761610000f178464ef353e1a7c72f67de8158",
           "width": 160
         }
       ],
-      "name": "Yaeji",
+      "name": "TWICE",
+      "popularity": 86,
+      "type": "artist",
+      "uri": "spotify:artist:7n2Ycct7Beij7Dj7meI4X0"
+    },
+    {
+      "external_urls": {
+        "spotify": "https://open.spotify.com/artist/3MNLhvqJkWsO6tcjY9ps62"
+      },
+      "followers": { "href": null, "total": 66302 },
+      "genres": ["alt z", "indie pop", "nyc pop"],
+      "href": "https://api.spotify.com/v1/artists/3MNLhvqJkWsO6tcjY9ps62",
+      "id": "3MNLhvqJkWsO6tcjY9ps62",
+      "images": [
+        {
+          "height": 640,
+          "url": "https://i.scdn.co/image/ab6761610000e5eb25050db971f860cab3a2518f",
+          "width": 640
+        },
+        {
+          "height": 320,
+          "url": "https://i.scdn.co/image/ab6761610000517425050db971f860cab3a2518f",
+          "width": 320
+        },
+        {
+          "height": 160,
+          "url": "https://i.scdn.co/image/ab6761610000f17825050db971f860cab3a2518f",
+          "width": 160
+        }
+      ],
+      "name": "Maude Latour",
       "popularity": 57,
       "type": "artist",
-      "uri": "spotify:artist:2RqrWplViWHSGLzlhmDcbt"
+      "uri": "spotify:artist:3MNLhvqJkWsO6tcjY9ps62"
     },
     {
       "external_urls": {
-        "spotify": "https://open.spotify.com/artist/0qu422H5MOoQxGjd4IzHbS"
+        "spotify": "https://open.spotify.com/artist/3V0ZQW0dNuVaFtbVYgSI24"
       },
-      "followers": { "href": null, "total": 213153 },
-      "genres": [
-        "alternative r&b",
-        "art pop",
-        "escape room",
-        "experimental r&b"
-      ],
-      "href": "https://api.spotify.com/v1/artists/0qu422H5MOoQxGjd4IzHbS",
-      "id": "0qu422H5MOoQxGjd4IzHbS",
+      "followers": { "href": null, "total": 260564 },
+      "genres": ["alt z", "indie pop", "modern indie pop", "pop"],
+      "href": "https://api.spotify.com/v1/artists/3V0ZQW0dNuVaFtbVYgSI24",
+      "id": "3V0ZQW0dNuVaFtbVYgSI24",
       "images": [
         {
           "height": 640,
-          "url": "https://i.scdn.co/image/ab6761610000e5eb37814ecae812c63b92ba3ae9",
+          "url": "https://i.scdn.co/image/ab6761610000e5ebea6d626413e158a3d93b957b",
           "width": 640
         },
         {
           "height": 320,
-          "url": "https://i.scdn.co/image/ab6761610000517437814ecae812c63b92ba3ae9",
+          "url": "https://i.scdn.co/image/ab67616100005174ea6d626413e158a3d93b957b",
           "width": 320
         },
         {
           "height": 160,
-          "url": "https://i.scdn.co/image/ab6761610000f17837814ecae812c63b92ba3ae9",
+          "url": "https://i.scdn.co/image/ab6761610000f178ea6d626413e158a3d93b957b",
           "width": 160
         }
       ],
-      "name": "Yves Tumor",
-      "popularity": 62,
+      "name": "Claire Rosinkranz",
+      "popularity": 69,
       "type": "artist",
-      "uri": "spotify:artist:0qu422H5MOoQxGjd4IzHbS"
+      "uri": "spotify:artist:3V0ZQW0dNuVaFtbVYgSI24"
     },
     {
       "external_urls": {
-        "spotify": "https://open.spotify.com/artist/6OqhFYFJDnBBHas02HopPT"
+        "spotify": "https://open.spotify.com/artist/4gzpq5DPGxSnKTe4SA8HAU"
       },
-      "followers": { "href": null, "total": 391357 },
-      "genres": ["art pop", "escape room", "hyperpop", "japanese electropop"],
-      "href": "https://api.spotify.com/v1/artists/6OqhFYFJDnBBHas02HopPT",
-      "id": "6OqhFYFJDnBBHas02HopPT",
+      "followers": { "href": null, "total": 34194855 },
+      "genres": ["permanent wave", "pop"],
+      "href": "https://api.spotify.com/v1/artists/4gzpq5DPGxSnKTe4SA8HAU",
+      "id": "4gzpq5DPGxSnKTe4SA8HAU",
       "images": [
         {
           "height": 640,
-          "url": "https://i.scdn.co/image/ab6761610000e5eb67dfd3f1682fd91c7052a05a",
+          "url": "https://i.scdn.co/image/ab6761610000e5eb865a3301762a8fce048cb469",
           "width": 640
         },
         {
           "height": 320,
-          "url": "https://i.scdn.co/image/ab6761610000517467dfd3f1682fd91c7052a05a",
+          "url": "https://i.scdn.co/image/ab67616100005174865a3301762a8fce048cb469",
           "width": 320
         },
         {
           "height": 160,
-          "url": "https://i.scdn.co/image/ab6761610000f17867dfd3f1682fd91c7052a05a",
+          "url": "https://i.scdn.co/image/ab6761610000f178865a3301762a8fce048cb469",
           "width": 160
         }
       ],
-      "name": "Kero Kero Bonito",
-      "popularity": 64,
+      "name": "Coldplay",
+      "popularity": 91,
       "type": "artist",
-      "uri": "spotify:artist:6OqhFYFJDnBBHas02HopPT"
-    },
-    {
-      "external_urls": {
-        "spotify": "https://open.spotify.com/artist/3zmfs9cQwzJl575W1ZYXeT"
-      },
-      "followers": { "href": null, "total": 690255 },
-      "genres": ["indie pop"],
-      "href": "https://api.spotify.com/v1/artists/3zmfs9cQwzJl575W1ZYXeT",
-      "id": "3zmfs9cQwzJl575W1ZYXeT",
-      "images": [
-        {
-          "height": 640,
-          "url": "https://i.scdn.co/image/ab6761610000e5ebfd30ebd7e80dad6b2383aab0",
-          "width": 640
-        },
-        {
-          "height": 320,
-          "url": "https://i.scdn.co/image/ab67616100005174fd30ebd7e80dad6b2383aab0",
-          "width": 320
-        },
-        {
-          "height": 160,
-          "url": "https://i.scdn.co/image/ab6761610000f178fd30ebd7e80dad6b2383aab0",
-          "width": 160
-        }
-      ],
-      "name": "Men I Trust",
-      "popularity": 70,
-      "type": "artist",
-      "uri": "spotify:artist:3zmfs9cQwzJl575W1ZYXeT"
-    },
-    {
-      "external_urls": {
-        "spotify": "https://open.spotify.com/artist/0Y5tJX1MQlPlqiwlOH1tJY"
-      },
-      "followers": { "href": null, "total": 19848108 },
-      "genres": ["rap", "slap house"],
-      "href": "https://api.spotify.com/v1/artists/0Y5tJX1MQlPlqiwlOH1tJY",
-      "id": "0Y5tJX1MQlPlqiwlOH1tJY",
-      "images": [
-        {
-          "height": 640,
-          "url": "https://i.scdn.co/image/ab6761610000e5ebe707b87e3f65997f6c09bfff",
-          "width": 640
-        },
-        {
-          "height": 320,
-          "url": "https://i.scdn.co/image/ab67616100005174e707b87e3f65997f6c09bfff",
-          "width": 320
-        },
-        {
-          "height": 160,
-          "url": "https://i.scdn.co/image/ab6761610000f178e707b87e3f65997f6c09bfff",
-          "width": 160
-        }
-      ],
-      "name": "Travis Scott",
-      "popularity": 93,
-      "type": "artist",
-      "uri": "spotify:artist:0Y5tJX1MQlPlqiwlOH1tJY"
-    },
-    {
-      "external_urls": {
-        "spotify": "https://open.spotify.com/artist/5EiwfaQxmwjCyPLZ7i6kxW"
-      },
-      "followers": { "href": null, "total": 301302 },
-      "genres": ["dance pop", "pink noise", "transpop"],
-      "href": "https://api.spotify.com/v1/artists/5EiwfaQxmwjCyPLZ7i6kxW",
-      "id": "5EiwfaQxmwjCyPLZ7i6kxW",
-      "images": [
-        {
-          "height": 640,
-          "url": "https://i.scdn.co/image/ab6761610000e5eb8b1f7f4f389a674bfe1a9b4d",
-          "width": 640
-        },
-        {
-          "height": 320,
-          "url": "https://i.scdn.co/image/ab676161000051748b1f7f4f389a674bfe1a9b4d",
-          "width": 320
-        },
-        {
-          "height": 160,
-          "url": "https://i.scdn.co/image/ab6761610000f1788b1f7f4f389a674bfe1a9b4d",
-          "width": 160
-        }
-      ],
-      "name": "Ayesha Erotica",
-      "popularity": 61,
-      "type": "artist",
-      "uri": "spotify:artist:5EiwfaQxmwjCyPLZ7i6kxW"
-    },
-    {
-      "external_urls": {
-        "spotify": "https://open.spotify.com/artist/3kjFmLBLtiN9u0vU8FiCLD"
-      },
-      "followers": { "href": null, "total": 6138 },
-      "genres": ["desi hip hop", "desi trap", "indian underground rap"],
-      "href": "https://api.spotify.com/v1/artists/3kjFmLBLtiN9u0vU8FiCLD",
-      "id": "3kjFmLBLtiN9u0vU8FiCLD",
-      "images": [
-        {
-          "height": 640,
-          "url": "https://i.scdn.co/image/ab6761610000e5eb9fbde4e55c0218ac3aba8a4e",
-          "width": 640
-        },
-        {
-          "height": 320,
-          "url": "https://i.scdn.co/image/ab676161000051749fbde4e55c0218ac3aba8a4e",
-          "width": 320
-        },
-        {
-          "height": 160,
-          "url": "https://i.scdn.co/image/ab6761610000f1789fbde4e55c0218ac3aba8a4e",
-          "width": 160
-        }
-      ],
-      "name": "Vasudev",
-      "popularity": 30,
-      "type": "artist",
-      "uri": "spotify:artist:3kjFmLBLtiN9u0vU8FiCLD"
-    },
-    {
-      "external_urls": {
-        "spotify": "https://open.spotify.com/artist/3G3Gdm0ZRAOxLrbyjfhii5"
-      },
-      "followers": { "href": null, "total": 540879 },
-      "genres": [
-        "alternative rock",
-        "dream pop",
-        "noise pop",
-        "rock",
-        "shoegaze"
-      ],
-      "href": "https://api.spotify.com/v1/artists/3G3Gdm0ZRAOxLrbyjfhii5",
-      "id": "3G3Gdm0ZRAOxLrbyjfhii5",
-      "images": [
-        {
-          "height": 640,
-          "url": "https://i.scdn.co/image/ab6761610000e5eb21c79e4e6e1af6af9b94d3a0",
-          "width": 640
-        },
-        {
-          "height": 320,
-          "url": "https://i.scdn.co/image/ab6761610000517421c79e4e6e1af6af9b94d3a0",
-          "width": 320
-        },
-        {
-          "height": 160,
-          "url": "https://i.scdn.co/image/ab6761610000f17821c79e4e6e1af6af9b94d3a0",
-          "width": 160
-        }
-      ],
-      "name": "my bloody valentine",
-      "popularity": 63,
-      "type": "artist",
-      "uri": "spotify:artist:3G3Gdm0ZRAOxLrbyjfhii5"
-    },
-    {
-      "external_urls": {
-        "spotify": "https://open.spotify.com/artist/2KEqzdPS7M5YwGmiuPTdr5"
-      },
-      "followers": { "href": null, "total": 661826 },
-      "genres": ["art pop", "dance pop", "electropop", "escape room", "pop"],
-      "href": "https://api.spotify.com/v1/artists/2KEqzdPS7M5YwGmiuPTdr5",
-      "id": "2KEqzdPS7M5YwGmiuPTdr5",
-      "images": [
-        {
-          "height": 640,
-          "url": "https://i.scdn.co/image/ab6761610000e5eb7033d99b85ed729210093ab3",
-          "width": 640
-        },
-        {
-          "height": 320,
-          "url": "https://i.scdn.co/image/ab676161000051747033d99b85ed729210093ab3",
-          "width": 320
-        },
-        {
-          "height": 160,
-          "url": "https://i.scdn.co/image/ab6761610000f1787033d99b85ed729210093ab3",
-          "width": 160
-        }
-      ],
-      "name": "Rina Sawayama",
-      "popularity": 70,
-      "type": "artist",
-      "uri": "spotify:artist:2KEqzdPS7M5YwGmiuPTdr5"
-    },
-    {
-      "external_urls": {
-        "spotify": "https://open.spotify.com/artist/7bcbShaqKdcyjnmv4Ix8j6"
-      },
-      "followers": { "href": null, "total": 743831 },
-      "genres": [
-        "art pop",
-        "electropop",
-        "etherpop",
-        "indie pop",
-        "metropopolis"
-      ],
-      "href": "https://api.spotify.com/v1/artists/7bcbShaqKdcyjnmv4Ix8j6",
-      "id": "7bcbShaqKdcyjnmv4Ix8j6",
-      "images": [
-        {
-          "height": 640,
-          "url": "https://i.scdn.co/image/ab6761610000e5eb7cc26e31b27189be2b179fee",
-          "width": 640
-        },
-        {
-          "height": 320,
-          "url": "https://i.scdn.co/image/ab676161000051747cc26e31b27189be2b179fee",
-          "width": 320
-        },
-        {
-          "height": 160,
-          "url": "https://i.scdn.co/image/ab6761610000f1787cc26e31b27189be2b179fee",
-          "width": 160
-        }
-      ],
-      "name": "St. Vincent",
-      "popularity": 68,
-      "type": "artist",
-      "uri": "spotify:artist:7bcbShaqKdcyjnmv4Ix8j6"
-    },
-    {
-      "external_urls": {
-        "spotify": "https://open.spotify.com/artist/4KEHIUSoWCcqrk8AddTE1O"
-      },
-      "followers": { "href": null, "total": 57782 },
-      "genres": ["diy emo"],
-      "href": "https://api.spotify.com/v1/artists/4KEHIUSoWCcqrk8AddTE1O",
-      "id": "4KEHIUSoWCcqrk8AddTE1O",
-      "images": [
-        {
-          "height": 640,
-          "url": "https://i.scdn.co/image/ab6761610000e5eb54f9b3c19686ae1e667c80ec",
-          "width": 640
-        },
-        {
-          "height": 320,
-          "url": "https://i.scdn.co/image/ab6761610000517454f9b3c19686ae1e667c80ec",
-          "width": 320
-        },
-        {
-          "height": 160,
-          "url": "https://i.scdn.co/image/ab6761610000f17854f9b3c19686ae1e667c80ec",
-          "width": 160
-        }
-      ],
-      "name": "Panchiko",
-      "popularity": 52,
-      "type": "artist",
-      "uri": "spotify:artist:4KEHIUSoWCcqrk8AddTE1O"
-    },
-    {
-      "external_urls": {
-        "spotify": "https://open.spotify.com/artist/4Ge8xMJNwt6EEXOzVXju9a"
-      },
-      "followers": { "href": null, "total": 192138 },
-      "genres": [
-        "art pop",
-        "dance pop",
-        "electropop",
-        "escape room",
-        "hyperpop",
-        "indie pop",
-        "indietronica",
-        "pop"
-      ],
-      "href": "https://api.spotify.com/v1/artists/4Ge8xMJNwt6EEXOzVXju9a",
-      "id": "4Ge8xMJNwt6EEXOzVXju9a",
-      "images": [
-        {
-          "height": 640,
-          "url": "https://i.scdn.co/image/ab6761610000e5eb387753c353b532462998f157",
-          "width": 640
-        },
-        {
-          "height": 320,
-          "url": "https://i.scdn.co/image/ab67616100005174387753c353b532462998f157",
-          "width": 320
-        },
-        {
-          "height": 160,
-          "url": "https://i.scdn.co/image/ab6761610000f178387753c353b532462998f157",
-          "width": 160
-        }
-      ],
-      "name": "Caroline Polachek",
-      "popularity": 68,
-      "type": "artist",
-      "uri": "spotify:artist:4Ge8xMJNwt6EEXOzVXju9a"
-    },
-    {
-      "external_urls": {
-        "spotify": "https://open.spotify.com/artist/6cadOIa5DTh6a5mGo5r4bh"
-      },
-      "followers": { "href": null, "total": 138668 },
-      "genres": ["soundtrack"],
-      "href": "https://api.spotify.com/v1/artists/6cadOIa5DTh6a5mGo5r4bh",
-      "id": "6cadOIa5DTh6a5mGo5r4bh",
-      "images": [
-        {
-          "height": 640,
-          "url": "https://i.scdn.co/image/ab6761610000e5eb0178d25a117d796ce3ba4fee",
-          "width": 640
-        },
-        {
-          "height": 320,
-          "url": "https://i.scdn.co/image/ab676161000051740178d25a117d796ce3ba4fee",
-          "width": 320
-        },
-        {
-          "height": 160,
-          "url": "https://i.scdn.co/image/ab6761610000f1780178d25a117d796ce3ba4fee",
-          "width": 160
-        }
-      ],
-      "name": "Trent Reznor and Atticus Ross",
-      "popularity": 57,
-      "type": "artist",
-      "uri": "spotify:artist:6cadOIa5DTh6a5mGo5r4bh"
-    },
-    {
-      "external_urls": {
-        "spotify": "https://open.spotify.com/artist/4gHcu2JoaXJ0mV4aNPCd7N"
-      },
-      "followers": { "href": null, "total": 123868 },
-      "genres": ["dutch pop", "indie soul"],
-      "href": "https://api.spotify.com/v1/artists/4gHcu2JoaXJ0mV4aNPCd7N",
-      "id": "4gHcu2JoaXJ0mV4aNPCd7N",
-      "images": [
-        {
-          "height": 640,
-          "url": "https://i.scdn.co/image/ab6761610000e5eb70e9d37d77bb0b57707cb8b0",
-          "width": 640
-        },
-        {
-          "height": 320,
-          "url": "https://i.scdn.co/image/ab6761610000517470e9d37d77bb0b57707cb8b0",
-          "width": 320
-        },
-        {
-          "height": 160,
-          "url": "https://i.scdn.co/image/ab6761610000f17870e9d37d77bb0b57707cb8b0",
-          "width": 160
-        }
-      ],
-      "name": "Benny Sings",
-      "popularity": 67,
-      "type": "artist",
-      "uri": "spotify:artist:4gHcu2JoaXJ0mV4aNPCd7N"
+      "uri": "spotify:artist:4gzpq5DPGxSnKTe4SA8HAU"
     }
   ],
-  "total": 50,
+  "total": 22,
   "limit": 50,
   "offset": 0,
   "previous": null,
-  "href": "https://api.spotify.com/v1/me/top/artists?limit=50&offset=0&time_range=long_term",
+  "href": "https://api.spotify.com/v1/me/top/artists?limit=50&offset=0",
   "next": null
 }

@@ -86,7 +86,7 @@ app.get("/callback", (req, res) => {
     }
     getToken().then((data) => {
       fetch(
-        "https://api.spotify.com/v1/me/top/artists?limit=50&time_range=long_term",
+        "https://api.spotify.com/v1/me/top/artists?limit=50&time_range=medium_term",
         {
           headers: {
             Accept: "application/json",
