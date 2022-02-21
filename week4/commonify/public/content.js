@@ -4,6 +4,7 @@ let finalBubbles = [];
 let mutualArtists = [];
 let user1length;
 let user2length;
+let imageArray = [];
 const totalBubbles = 15;
 function preload() {
   fetch("./user1.json")
@@ -92,6 +93,12 @@ function preload() {
         }
       }
       console.log(finalBubbles);
+
+      for (let i = 0; i < finalBubbles.length; i++) {
+        let img = loadImage(finalBubbles[i].images[0].url);
+        imageArray.push(img);
+      }
+      console.log(imageArray);
     });
 }
 
@@ -104,15 +111,16 @@ let counter2 = 0;
 class artistBubble {
   constructor(
     _r,
-    _belonging
-    // _name, _img, _link
+    _belonging,
+    _img
+    // _name, _link
   ) {
     this.x = random(_r, width - _r);
     this.y = random(_r, height - _r);
     this.r = _r;
     this.belonging = _belonging;
     // this.name = this._name;
-    // this.img = _img;
+    this.img = _img;
     // this.link = _link;
   }
   draw() {
@@ -124,6 +132,11 @@ class artistBubble {
       stroke(193, 130, 243);
     }
     ellipse(this.x, this.y, this.r * 2);
+    // let photo = this.img;
+    // let maskImage = createGraphics(photo.width, photo.height);
+    // maskImage.ellipse(this.x, this.y, this.r * 2);
+    // photo.mask(maskImage);
+    // image(photo, 300, 0);
   }
 }
 
@@ -164,23 +177,29 @@ function setup() {
 let index = 0;
 let counter = 0;
 function draw() {
-  if (finalBubbles.length == finalBubbles.length) {
+  if (finalBubbles.length == totalBubbles) {
     while (artistBubbleArray.length < finalBubbles.length) {
       let overlapping = false;
       let proposalBubble;
       if (finalBubbles[index].belonging == "mutual") {
-        proposalBubble = new artistBubble(75, finalBubbles[index].belonging);
+        proposalBubble = new artistBubble(
+          75,
+          finalBubbles[index].belonging,
+          imageArray[index]
+        );
       } else if (finalBubbles[index].belonging == "user1") {
         console.log(index - mutualArtists.length);
         proposalBubble = new artistBubble(
           75 / (1 + index - mutualArtists.length),
-          finalBubbles[index].belonging
+          finalBubbles[index].belonging,
+          imageArray[index]
         );
       } else {
         console.log(index - (mutualArtists.length + user1length));
         proposalBubble = new artistBubble(
           75 / (1 + index - (mutualArtists.length + user1length)),
-          finalBubbles[index].belonging
+          finalBubbles[index].belonging,
+          imageArray[index]
         );
       }
       for (let j = 0; j < artistBubbleArray.length; j++) {
