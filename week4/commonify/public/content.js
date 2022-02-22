@@ -100,7 +100,10 @@ let index = 0;
 let counter = 0;
 
 function draw() {
-  if (finalBubbles.length == totalBubbles) {
+  if (
+    finalBubbles.length == totalBubbles &&
+    imageArray.length == totalBubbles
+  ) {
     while (artistBubbleArray.length < finalBubbles.length) {
       let overlapping = false;
       let proposalBubble;
@@ -170,19 +173,18 @@ class artistBubble {
   }
   draw() {
     if (this.belonging == "user1") {
-      stroke(255, 138, 138);
+      fill(255, 138, 138);
     } else if (this.belonging == "user2") {
-      stroke(97, 194, 236);
+      fill(97, 194, 236);
     } else {
-      stroke(193, 130, 243);
+      fill(193, 130, 243);
     }
-    strokeWeight(this.r / 12);
-    noFill();
-    ellipse(this.x, this.y, this.r * 2);
-    // let photo = this.img;
-    // let maskImage = createGraphics(photo.width, photo.height);
-    // maskImage.ellipse(this.x, this.y, this.r * 2);
-    // photo.mask(maskImage);
-    // image(photo, 300, 0, this.r * 2, this.r * 2);
+    circle(this.x, this.y, this.r * 2 + 10);
+    let circleMask = createGraphics(this.r * 2, this.r * 2);
+    circleMask.fill("rgba(0,0,0,1)");
+    circleMask.circle(this.r, this.r, this.r * 2);
+    let artistImg = this.img;
+    artistImg.mask(circleMask);
+    image(artistImg, this.x - this.r, this.y - this.r, this.r * 2, this.r * 2);
   }
 }
