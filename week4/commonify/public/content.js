@@ -6,7 +6,7 @@ let user1length;
 let user2length;
 let imageArray = [];
 let artistObjectArray = [];
-const totalBubbles = 20;
+const totalBubbles = 15;
 fetch("./user1.json")
   .then((response) => response.json())
   .then((data) => {
@@ -91,13 +91,13 @@ function preload() {
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  background("#191414");
 }
 
 let index = 0;
 let counter = 0;
 
 function draw() {
+  background("#191414");
   if (
     finalArtists.length == totalBubbles &&
     imageArray.length == totalBubbles
@@ -105,27 +105,20 @@ function draw() {
     while (artistObjectArray.length < finalArtists.length) {
       let overlapping = false;
       let proposalBubble;
+      let radius;
       if (finalArtists[index].belonging == "mutual") {
-        proposalBubble = new artistBubble(
-          75,
-          finalArtists[index].belonging,
-          imageArray[index]
-        );
+        radius = 75;
       } else if (finalArtists[index].belonging == "user1") {
-        console.log(75 - (index - mutualArtists.length) * 4);
-        proposalBubble = new artistBubble(
-          75 - (index - mutualArtists.length) * 4,
-          finalArtists[index].belonging,
-          imageArray[index]
-        );
+        radius = 75 - (index - mutualArtists.length) * 4;
       } else {
-        console.log(75 - (index - (mutualArtists.length + user1length)) * 4);
-        proposalBubble = new artistBubble(
-          75 - (index - (mutualArtists.length + user1length)) * 4,
-          finalArtists[index].belonging,
-          imageArray[index]
-        );
+        radius = 75 - (index - (mutualArtists.length + user1length)) * 4;
       }
+      proposalBubble = new artistBubble(
+        radius,
+        finalArtists[index].belonging,
+        imageArray[index],
+        finalArtists[index].name
+      );
       for (let j = 0; j < artistObjectArray.length; j++) {
         let existingBubble = artistObjectArray[j];
         let d = dist(
@@ -143,13 +136,17 @@ function draw() {
       if (!overlapping) {
         index += 1;
         artistObjectArray.push(proposalBubble);
-        proposalBubble.draw();
       }
 
       counter++;
       if (counter > 100000) {
         break;
       }
+    }
+
+    for (let i = 0; i < artistObjectArray.length; i++) {
+      artistObjectArray[i].draw();
+      artistObjectArray[i].hover();
     }
   }
 }
@@ -158,15 +155,16 @@ class artistBubble {
   constructor(
     _r,
     _belonging,
-    _img
-    // _name, _link
+    _img,
+    _name
+    //  _link
   ) {
     this.x = random(_r, width - _r);
     this.y = random(_r, height - _r);
     this.r = _r;
     this.belonging = _belonging;
-    // this.name = this._name;
     this.img = _img;
+    this.name = _name;
     // this.link = _link;
   }
   draw() {
@@ -184,5 +182,11 @@ class artistBubble {
     let artistImg = this.img;
     artistImg.mask(circleMask);
     image(artistImg, this.x - this.r, this.y - this.r, this.r * 2, this.r * 2);
+  }
+  hover() {
+    if (dist(mouseX, mouseY, this.x, this.y) <= this.r) {
+      console.log(this.name);
+      text(this.name, mouseX, mouseY);
+    }
   }
 }
