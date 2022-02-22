@@ -1,11 +1,11 @@
 let user1 = [];
 let user2 = [];
-let finalBubbles = [];
+let finalArtists = [];
 let mutualArtists = [];
 let user1length;
 let user2length;
 let imageArray = [];
-let artistBubbleArray = [];
+let artistObjectArray = [];
 const totalBubbles = 15;
 
 function preload() {
@@ -30,7 +30,7 @@ function preload() {
             mutualArtists.push(user1[i]);
             artist = user1[i];
             artist["belonging"] = "mutual";
-            finalBubbles.push(artist);
+            finalArtists.push(artist);
           }
         }
       }
@@ -57,7 +57,7 @@ function preload() {
           counter += 1;
           artist = user1[i];
           artist["belonging"] = "user1";
-          finalBubbles.push(artist);
+          finalArtists.push(artist);
         }
       }
       // same as above but for user 2 now
@@ -77,14 +77,14 @@ function preload() {
           counter += 1;
           artist = user2[i];
           artist["belonging"] = "user2";
-          finalBubbles.push(artist);
+          finalArtists.push(artist);
         }
       }
-      console.log(finalBubbles);
+      console.log(finalArtists);
 
       // pre load images
-      for (let i = 0; i < finalBubbles.length; i++) {
-        let img = loadImage(finalBubbles[i].images[0].url);
+      for (let i = 0; i < finalArtists.length; i++) {
+        let img = loadImage(finalArtists[i].images[0].url);
         imageArray.push(img);
       }
       console.log(imageArray);
@@ -101,35 +101,35 @@ let counter = 0;
 
 function draw() {
   if (
-    finalBubbles.length == totalBubbles &&
+    finalArtists.length == totalBubbles &&
     imageArray.length == totalBubbles
   ) {
-    while (artistBubbleArray.length < finalBubbles.length) {
+    while (artistObjectArray.length < finalArtists.length) {
       let overlapping = false;
       let proposalBubble;
-      if (finalBubbles[index].belonging == "mutual") {
+      if (finalArtists[index].belonging == "mutual") {
         proposalBubble = new artistBubble(
           75,
-          finalBubbles[index].belonging,
+          finalArtists[index].belonging,
           imageArray[index]
         );
-      } else if (finalBubbles[index].belonging == "user1") {
+      } else if (finalArtists[index].belonging == "user1") {
         console.log(75 - (index - mutualArtists.length) * 4);
         proposalBubble = new artistBubble(
           75 - (index - mutualArtists.length) * 4,
-          finalBubbles[index].belonging,
+          finalArtists[index].belonging,
           imageArray[index]
         );
       } else {
         console.log(75 - (index - (mutualArtists.length + user1length)) * 4);
         proposalBubble = new artistBubble(
           75 - (index - (mutualArtists.length + user1length)) * 4,
-          finalBubbles[index].belonging,
+          finalArtists[index].belonging,
           imageArray[index]
         );
       }
-      for (let j = 0; j < artistBubbleArray.length; j++) {
-        let existingBubble = artistBubbleArray[j];
+      for (let j = 0; j < artistObjectArray.length; j++) {
+        let existingBubble = artistObjectArray[j];
         let d = dist(
           proposalBubble.x,
           proposalBubble.y,
@@ -144,7 +144,7 @@ function draw() {
 
       if (!overlapping) {
         index += 1;
-        artistBubbleArray.push(proposalBubble);
+        artistObjectArray.push(proposalBubble);
         proposalBubble.draw();
       }
 
