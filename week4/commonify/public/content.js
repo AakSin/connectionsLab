@@ -5,7 +5,9 @@ let mutualArtists = [];
 let user1length;
 let user2length;
 let imageArray = [];
+let artistBubbleArray = [];
 const totalBubbles = 15;
+
 function preload() {
   fetch("./user1.json")
     .then((response) => response.json())
@@ -17,8 +19,10 @@ function preload() {
     .then((data) => {
       user2 = data.items;
 
+      // loop for finding mutual artists among 2 users
       for (let i = 0; i < user1.length; i++) {
         for (let j = 0; j < user2.length; j++) {
+          // if it reaches total number of bubbles then break
           if (mutualArtists.length == totalBubbles) {
             break;
           }
@@ -30,39 +34,22 @@ function preload() {
           }
         }
       }
+
+      // split the remaining bubbles in 2 for the users
       user1length = Math.ceil((totalBubbles - mutualArtists.length) / 2);
       user2length = Math.floor((totalBubbles - mutualArtists.length) / 2);
-      // let counter = 0;
-      // let index = 0;
-      // while (counter < user1length) {
-      //   debugger;
-      //   if (!mutualArtists.includes(user1[index])) {
-      //     debugger;
-      //     finalBubbles.push(user1[index]);
-      //     counter += 1;
-      //   }
-      //   index += 1;
-      // }
-      // counter = 0;
-      // index = 0;
-      // while (counter < user2length) {
-      //   debugger;
-      //   if (!mutualArtists.includes(user2[index])) {
-      //     debugger;
-      //     finalBubbles.push(user2[index]);
-      //     counter += 1;
-      //   }
-      //   index += 1;
-      // }
+
       let counter = 0;
       for (let i = 0; i < user1.length; i++) {
         let occursIn = false;
+        // if artist is already in mutual break
         for (let j = 0; j < mutualArtists.length; j++) {
           if (user1[i].id == mutualArtists[j].id) {
             occursIn = true;
             break;
           }
         }
+        // break it when it reaches the required length
         if (counter == user1length) {
           break;
         }
@@ -73,6 +60,7 @@ function preload() {
           finalBubbles.push(artist);
         }
       }
+      // same as above but for user 2 now
       counter = 0;
       for (let i = 0; i < user2.length; i++) {
         let occursIn = false;
@@ -94,6 +82,7 @@ function preload() {
       }
       console.log(finalBubbles);
 
+      // pre load images
       for (let i = 0; i < finalBubbles.length; i++) {
         let img = loadImage(finalBubbles[i].images[0].url);
         imageArray.push(img);
@@ -102,11 +91,67 @@ function preload() {
     });
 }
 
-let artistBubbleArray = [];
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+  background("#191414");
+}
 
-let counterM = 0;
-let counter1 = 0;
-let counter2 = 0;
+let index = 0;
+let counter = 0;
+
+function draw() {
+  if (finalBubbles.length == totalBubbles) {
+    while (artistBubbleArray.length < finalBubbles.length) {
+      let overlapping = false;
+      let proposalBubble;
+      if (finalBubbles[index].belonging == "mutual") {
+        proposalBubble = new artistBubble(
+          75,
+          finalBubbles[index].belonging,
+          imageArray[index]
+        );
+      } else if (finalBubbles[index].belonging == "user1") {
+        console.log(75 - (index - mutualArtists.length) * 4);
+        proposalBubble = new artistBubble(
+          75 - (index - mutualArtists.length) * 4,
+          finalBubbles[index].belonging,
+          imageArray[index]
+        );
+      } else {
+        console.log(75 - (index - (mutualArtists.length + user1length)) * 4);
+        proposalBubble = new artistBubble(
+          75 - (index - (mutualArtists.length + user1length)) * 4,
+          finalBubbles[index].belonging,
+          imageArray[index]
+        );
+      }
+      for (let j = 0; j < artistBubbleArray.length; j++) {
+        let existingBubble = artistBubbleArray[j];
+        let d = dist(
+          proposalBubble.x,
+          proposalBubble.y,
+          existingBubble.x,
+          existingBubble.y
+        );
+        if (d - 10 < proposalBubble.r + existingBubble.r) {
+          overlapping = true;
+          break;
+        }
+      }
+
+      if (!overlapping) {
+        index += 1;
+        artistBubbleArray.push(proposalBubble);
+        proposalBubble.draw();
+      }
+
+      counter++;
+      if (counter > 100000) {
+        break;
+      }
+    }
+  }
+}
 
 class artistBubble {
   constructor(
@@ -131,194 +176,13 @@ class artistBubble {
     } else {
       stroke(193, 130, 243);
     }
+    strokeWeight(this.r / 12);
+    noFill();
     ellipse(this.x, this.y, this.r * 2);
     // let photo = this.img;
     // let maskImage = createGraphics(photo.width, photo.height);
     // maskImage.ellipse(this.x, this.y, this.r * 2);
     // photo.mask(maskImage);
-    // image(photo, 300, 0);
-  }
-}
-
-function setup() {
-  createCanvas(windowWidth, windowHeight);
-  background(255);
-
-  // let counter = 0;
-  // const protection = 100000;
-  // let tries = 0;
-
-  // while (counter < 20) {
-  //   let overlapping = false;
-  //   r = noise(20 - counter) * 100;
-  //   x = random(0 + r, width - r);
-  //   y = random(0 + r, height - r);
-  //   for (let i = 0; i < artistBubbleArray.length; i++) {
-  //     if (
-  //       dist(artistBubbleArray[i].x, artistBubbleArray[i].y, x, y) <=
-  //       artistBubbleArray[i].r + r
-  //     ) {
-  //       overlapping = true;
-  //       break;
-  //     }
-  //   }
-  //   if (!overlapping) {
-  //     artistBubbleArray.push(new artistBubble(x, y, r));
-  //     artistBubbleArray[counter].draw();
-  //     counter += 1;
-  //   }
-  //   tries += 1;
-  //   if (tries > protection) {
-  //     break;
-  //   }
-  // }
-  // console.log(counter);
-}
-let index = 0;
-let counter = 0;
-function draw() {
-  if (finalBubbles.length == totalBubbles) {
-    while (artistBubbleArray.length < finalBubbles.length) {
-      let overlapping = false;
-      let proposalBubble;
-      if (finalBubbles[index].belonging == "mutual") {
-        proposalBubble = new artistBubble(
-          75,
-          finalBubbles[index].belonging,
-          imageArray[index]
-        );
-      } else if (finalBubbles[index].belonging == "user1") {
-        console.log(index - mutualArtists.length);
-        proposalBubble = new artistBubble(
-          75 / (1 + index - mutualArtists.length),
-          finalBubbles[index].belonging,
-          imageArray[index]
-        );
-      } else {
-        console.log(index - (mutualArtists.length + user1length));
-        proposalBubble = new artistBubble(
-          75 / (1 + index - (mutualArtists.length + user1length)),
-          finalBubbles[index].belonging,
-          imageArray[index]
-        );
-      }
-      for (let j = 0; j < artistBubbleArray.length; j++) {
-        let existingBubble = artistBubbleArray[j];
-        let d = dist(
-          proposalBubble.x,
-          proposalBubble.y,
-          existingBubble.x,
-          existingBubble.y
-        );
-        if (d < proposalBubble.r + existingBubble.r) {
-          overlapping = true;
-          break;
-        }
-      }
-
-      if (!overlapping) {
-        index += 1;
-        artistBubbleArray.push(proposalBubble);
-        proposalBubble.draw();
-      }
-
-      counter++;
-      if (counter > 100000) {
-        break;
-      }
-    }
-    // console.log(mutualArtists);
-    //   while (artistBubbleArray.length < mutualArtists.length) {
-    //     let overlapping = false;
-    //     let proposalBubble = new artistBubble(75, "mutual");
-    //     for (let j = 0; j < artistBubbleArray.length; j++) {
-    //       let existingBubble = artistBubbleArray[j];
-    //       let d = dist(
-    //         proposalBubble.x,
-    //         proposalBubble.y,
-    //         existingBubble.x,
-    //         existingBubble.y
-    //       );
-    //       if (d < proposalBubble.r + existingBubble.r) {
-    //         overlapping = true;
-    //         break;
-    //       }
-    //     }
-
-    //     if (!overlapping) {
-    //       real += 1;
-    //       console.log(real);
-    //       artistBubbleArray.push(proposalBubble);
-    //       proposalBubble.draw();
-    //     }
-
-    //     counterM++;
-    //     if (counterM > 100000) {
-    //       break;
-    //     }
-    //   }
-    //   let index1 = 0;
-    //   while (artistBubbleArray.length < mutualArtists.length + user1length) {
-    //     let overlapping = false;
-    //     let proposalBubble = new artistBubble(75 - index1 * 10, "user1");
-    //     for (let j = 0; j < artistBubbleArray.length; j++) {
-    //       let existingBubble = artistBubbleArray[j];
-    //       let d = dist(
-    //         proposalBubble.x,
-    //         proposalBubble.y,
-    //         existingBubble.x,
-    //         existingBubble.y
-    //       );
-    //       if (d < proposalBubble.r + existingBubble.r) {
-    //         overlapping = true;
-    //         break;
-    //       }
-    //     }
-
-    //     if (!overlapping) {
-    //       index1 += 1;
-
-    //       artistBubbleArray.push(proposalBubble);
-    //       proposalBubble.draw();
-    //     }
-
-    //     counter1++;
-    //     if (counter1 > 100000) {
-    //       break;
-    //     }
-    //   }
-    // }
-    // let index2 = 0;
-    // while (
-    //   artistBubbleArray.length <
-    //   mutualArtists.length + user1length + user2length
-    // ) {
-    //   let overlapping = false;
-    //   let proposalBubble = new artistBubble(75 - index2 * 10, "user2");
-    //   for (let j = 0; j < artistBubbleArray.length; j++) {
-    //     let existingBubble = artistBubbleArray[j];
-    //     let d = dist(
-    //       proposalBubble.x,
-    //       proposalBubble.y,
-    //       existingBubble.x,
-    //       existingBubble.y
-    //     );
-    //     if (d < proposalBubble.r + existingBubble.r) {
-    //       overlapping = true;
-    //       break;
-    //     }
-    //   }
-
-    //   if (!overlapping) {
-    //     index2 += 1;
-
-    //     artistBubbleArray.push(proposalBubble);
-    //     proposalBubble.draw();
-    //   }
-
-    //   counter2++;
-    //   if (counter2 > 100000) {
-    //     break;
-    //   }
+    // image(photo, 300, 0, this.r * 2, this.r * 2);
   }
 }
