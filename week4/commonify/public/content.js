@@ -79,6 +79,9 @@ fetch("./user2.json")
       }
     }
     console.log(finalArtists);
+
+    const mutualP = document.getElementById("mutual-p");
+    mutualP.innerText = `You have ${mutualArtists.length} artists in common`;
   });
 function preload() {
   // pre load images
@@ -91,6 +94,7 @@ function preload() {
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
+  font = loadFont("./assets/Montserrat-SemiBold.ttf");
   while (artistObjectArray.length < finalArtists.length) {
     let overlapping = false;
     let proposalBubble;
@@ -106,7 +110,8 @@ function setup() {
       radius,
       finalArtists[index].belonging,
       imageArray[index],
-      finalArtists[index].name
+      finalArtists[index].name,
+      finalArtists[index].external_urls.spotify
     );
     for (let j = 0; j < artistObjectArray.length; j++) {
       let existingBubble = artistObjectArray[j];
@@ -142,24 +147,19 @@ function draw() {
   for (let i = 0; i < artistObjectArray.length; i++) {
     artistObjectArray[i].draw();
     artistObjectArray[i].hover();
+    artistObjectArray[i].click();
   }
 }
 
 class artistBubble {
-  constructor(
-    _r,
-    _belonging,
-    _img,
-    _name
-    //  _link
-  ) {
-    this.x = random(_r, width - _r);
-    this.y = random(_r, height - _r);
+  constructor(_r, _belonging, _img, _name, _link) {
+    this.x = random(_r + 10, width - _r - 10);
+    this.y = random(_r + 10, height - _r - 10);
     this.r = _r;
     this.belonging = _belonging;
     this.img = _img;
     this.name = _name;
-    // this.link = _link;
+    this.link = _link;
   }
   draw() {
     if (this.belonging == "user1") {
@@ -179,8 +179,32 @@ class artistBubble {
   }
   hover() {
     if (dist(mouseX, mouseY, this.x, this.y) <= this.r) {
-      console.log(this.name);
-      text(this.name, mouseX, mouseY);
+      cursor(HAND);
+      let label = new Label(this.name);
+      label.draw();
     }
+  }
+  click() {
+    if (dist(mouseX, mouseY, this.x, this.y) <= this.r && mouseIsPressed) {
+      window.open(this.link);
+    }
+  }
+}
+class Label {
+  constructor(_name) {
+    (this.x = mouseX - 10),
+      (this.y = mouseY - 10),
+      (this.name = _name),
+      (this.fSize = 30);
+  }
+  draw() {
+    let bbox = font.textBounds(this.name, 0, 0, this.fSize);
+    noStroke();
+    fill(0, 0, 0, (255 * 3) / 4);
+    rect(this.x, this.y, bbox.w, bbox.h, 5);
+    fill("white");
+    textSize(this.fSize / 2);
+    textFont(font);
+    text(this.name, this.x + bbox.w / 4, this.y + (bbox.h * 3) / 4);
   }
 }
