@@ -7,7 +7,36 @@ body {
   text-align: center;
   color: #fff;
 }
-
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 10px 20px;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  border-radius: 20px;
+}
+#user1-btn {
+  background-color: #61c2ec;
+}
+#user2-btn {
+  background-color: #ff8a8a;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+p {
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  font-size: 64px;
+  padding: 0;
+  padding-top: 10px;
+  margin: 0;
+}
 header {
   display: flex;
   flex-direction: row;
