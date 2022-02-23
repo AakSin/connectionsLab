@@ -202,9 +202,8 @@ class artistBubble {
     let circleMask = createGraphics(this.r * 2, this.r * 2);
     circleMask.fill("rgba(0,0,0,1)");
     circleMask.circle(this.r, this.r, this.r * 2);
-    let artistImg = this.img;
-    artistImg.mask(circleMask);
-    image(artistImg, this.x - this.r, this.y - this.r, this.r * 2, this.r * 2);
+    this.img.mask(circleMask);
+    image(this.img, this.x - this.r, this.y - this.r, this.r * 2, this.r * 2);
   }
   hover() {
     if (dist(mouseX, mouseY, this.x, this.y) <= this.r) {
