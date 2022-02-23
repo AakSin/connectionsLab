@@ -18,10 +18,10 @@ button {
   border-radius: 20px;
 }
 #user1-btn {
-  background-color: #61c2ec;
+  background-color: #ff8a8a;
 }
 #user2-btn {
-  background-color: #ff8a8a;
+  background-color: #61c2ec;
 }
 a {
   color: white;
@@ -45,4 +45,26 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
+}
+#legend-ul {
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+.legend-li {
+  margin: 0 10px;
+  font-weight: 300;
+}
+#user1-li {
+  color: rgb(255, 138, 138);
+}
+#user2-li {
+  color: rgb(97, 194, 236);
+}
+#mutual-li {
+  color: rgb(193, 130, 243);
+}
+#mutual-number {
+  font-weight: 700;
 }
