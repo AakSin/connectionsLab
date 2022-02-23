@@ -147,7 +147,6 @@ function draw() {
   for (let i = 0; i < artistObjectArray.length; i++) {
     artistObjectArray[i].draw();
     artistObjectArray[i].hover();
-    artistObjectArray[i].click();
   }
 }
 
@@ -160,6 +159,7 @@ class artistBubble {
     this.img = _img;
     this.name = _name;
     this.link = _link;
+    this.label = new Label(_name);
   }
   draw() {
     if (this.belonging == "user1") {
@@ -180,8 +180,7 @@ class artistBubble {
   hover() {
     if (dist(mouseX, mouseY, this.x, this.y) <= this.r) {
       cursor(HAND);
-      let label = new Label(this.name);
-      label.draw();
+      this.label.draw(mouseX, mouseY);
     }
   }
   click() {
@@ -192,19 +191,24 @@ class artistBubble {
 }
 class Label {
   constructor(_name) {
-    (this.x = mouseX - 10),
-      (this.y = mouseY - 10),
-      (this.name = _name),
-      (this.fSize = 30);
+    (this.name = _name), (this.fSize = 30);
   }
-  draw() {
+  draw(_x, _y) {
+    let x = _x - 10;
+    let y = _y - 10;
     let bbox = font.textBounds(this.name, 0, 0, this.fSize);
     noStroke();
     fill(0, 0, 0, (255 * 3) / 4);
-    rect(this.x, this.y, bbox.w, bbox.h, 5);
+    rect(x, y, bbox.w, bbox.h, 5);
     fill("white");
     textSize(this.fSize / 2);
     textFont(font);
-    text(this.name, this.x + bbox.w / 4, this.y + (bbox.h * 3) / 4);
+    text(this.name, x + bbox.w / 4, y + (bbox.h * 3) / 4);
+  }
+}
+
+function mousePressed() {
+  for (let i = 0; i < artistObjectArray.length; i++) {
+    artistObjectArray[i].click();
   }
 }
