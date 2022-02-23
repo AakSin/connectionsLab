@@ -83,7 +83,6 @@ fetch("./user2.json")
         finalArtists.push(artist);
       }
     }
-    console.log(finalArtists);
 
     const mutualP = document.getElementById("mutual-p");
     mutualP.innerHTML = `You have <span id="mutual-number"> ${mutualArtists.length} artists </span> in common`;
@@ -108,7 +107,6 @@ function draw() {
       let img = loadImage(finalArtists[i].images[0].url);
       imageArray.push(img);
     }
-    console.log(imageArray);
     dataFetched = false;
     imagesCreated = true;
   }
