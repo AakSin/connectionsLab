@@ -7,7 +7,7 @@ let user2length;
 let finalArtists = [];
 let imageArray = [];
 let artistBubblesArray = [];
-const totalBubbles = 15;
+const totalBubbles = 20;
 
 // flags
 let dataFetched = false;
