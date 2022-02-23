@@ -81,7 +81,7 @@ fetch("./user2.json")
     console.log(finalArtists);
 
     const mutualP = document.getElementById("mutual-p");
-    mutualP.innerHTML = `You have <span id="mutual-number"> ${mutualArtists.length} artists </span> in common`;
+    mutualP.innerText = `You have ${mutualArtists.length} artists in common`;
   });
 function preload() {
   // pre load images
