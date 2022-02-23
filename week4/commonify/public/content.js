@@ -1,21 +1,27 @@
+// setup
 let user1 = [];
 let user2 = [];
-let finalArtists = [];
 let mutualArtists = [];
 let user1length;
 let user2length;
+let finalArtists = [];
 let imageArray = [];
-let artistObjectArray = [];
+let artistBubblesArray = [];
 const totalBubbles = 15;
 
 // flags
 let dataFetched = false;
 let imagesCreated = false;
 let bubblesCreated = false;
+
+// fetches
 fetch("./user1.json")
   .then((response) => response.json())
   .then((data) => {
     user1 = data.items;
+    if (user1 && user2) {
+      dataFetched = true;
+    }
   });
 fetch("./user2.json")
   .then((response) => response.json())
@@ -63,7 +69,7 @@ fetch("./user2.json")
         finalArtists.push(artist);
       }
     }
-    // same as above but for user 2 now
+    // same as above but for user 2 now [TODO: turn this into a function]
     counter = 0;
     for (let i = 0; i < user2.length; i++) {
       let occursIn = false;
@@ -86,8 +92,11 @@ fetch("./user2.json")
 
     const mutualP = document.getElementById("mutual-p");
     mutualP.innerHTML = `You have <span id="mutual-number"> ${mutualArtists.length} artists </span> in common`;
-    dataFetched = true;
+    if (user1 && user2) {
+      dataFetched = true;
+    }
   });
+
 function preload() {
   font = loadFont("./assets/Montserrat-SemiBold.ttf");
 }
@@ -111,7 +120,7 @@ function draw() {
     imagesCreated = true;
   }
   if (imagesCreated) {
-    while (artistObjectArray.length < finalArtists.length) {
+    while (artistBubblesArray.length < finalArtists.length) {
       let overlapping = false;
       let proposalBubble;
       let radius;
@@ -129,8 +138,8 @@ function draw() {
         finalArtists[index].name,
         finalArtists[index].external_urls.spotify
       );
-      for (let j = 0; j < artistObjectArray.length; j++) {
-        let existingBubble = artistObjectArray[j];
+      for (let j = 0; j < artistBubblesArray.length; j++) {
+        let existingBubble = artistBubblesArray[j];
         let d = dist(
           proposalBubble.x,
           proposalBubble.y,
@@ -145,7 +154,7 @@ function draw() {
 
       if (!overlapping) {
         index += 1;
-        artistObjectArray.push(proposalBubble);
+        artistBubblesArray.push(proposalBubble);
       }
 
       counter++;
@@ -157,9 +166,9 @@ function draw() {
     bubblesCreated = true;
   }
   if (bubblesCreated) {
-    for (let i = 0; i < artistObjectArray.length; i++) {
-      artistObjectArray[i].draw();
-      artistObjectArray[i].hover();
+    for (let i = 0; i < artistBubblesArray.length; i++) {
+      artistBubblesArray[i].draw();
+      artistBubblesArray[i].hover();
     }
   }
 }
@@ -222,7 +231,7 @@ class Label {
 }
 
 function mousePressed() {
-  for (let i = 0; i < artistObjectArray.length; i++) {
-    artistObjectArray[i].click();
+  for (let i = 0; i < artistBubblesArray.length; i++) {
+    artistBubblesArray[i].click();
   }
 }
