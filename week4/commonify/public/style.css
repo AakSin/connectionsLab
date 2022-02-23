@@ -47,6 +47,7 @@ header {
   justify-content: space-evenly;
 }
 #legend-ul {
+  list-style-type: disc;
   display: flex;
   padding: 0;
   justify-content: center;

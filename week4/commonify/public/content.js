@@ -90,8 +90,10 @@ fetch("./user2.json")
       }
     }
 
-    const mutualP = document.getElementById("mutual-p");
-    mutualP.innerHTML = `You have <span id="mutual-number"> ${mutualArtists.length} artists </span> in common`;
+    const mutualP = document.getElementById("legend-ul");
+    mutualP.innerHTML = `<li class="legend-li" id="user1-li">${user1length} User A</li>
+          <li class="legend-li" id="user2-li">${user2length} User B</li>
+          <li class="legend-li" id="mutual-li">${mutualArtists.length} Common</li>`;
     if (user1 && user2) {
       dataFetched = true;
     }
