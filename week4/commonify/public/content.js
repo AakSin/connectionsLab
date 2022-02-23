@@ -95,6 +95,48 @@ function preload() {
 function setup() {
   createCanvas(windowWidth, windowHeight);
   font = loadFont("./assets/Montserrat-SemiBold.ttf");
+  while (artistObjectArray.length < finalArtists.length) {
+    let overlapping = false;
+    let proposalBubble;
+    let radius;
+    if (finalArtists[index].belonging == "mutual") {
+      radius = 75;
+    } else if (finalArtists[index].belonging == "user1") {
+      radius = 75 - (index - mutualArtists.length) * 4;
+    } else {
+      radius = 75 - (index - (mutualArtists.length + user1length)) * 4;
+    }
+    proposalBubble = new artistBubble(
+      radius,
+      finalArtists[index].belonging,
+      imageArray[index],
+      finalArtists[index].name,
+      finalArtists[index].external_urls.spotify
+    );
+    for (let j = 0; j < artistObjectArray.length; j++) {
+      let existingBubble = artistObjectArray[j];
+      let d = dist(
+        proposalBubble.x,
+        proposalBubble.y,
+        existingBubble.x,
+        existingBubble.y
+      );
+      if (d - 10 < proposalBubble.r + existingBubble.r) {
+        overlapping = true;
+        break;
+      }
+    }
+
+    if (!overlapping) {
+      index += 1;
+      artistObjectArray.push(proposalBubble);
+    }
+
+    counter++;
+    if (counter > 100000) {
+      break;
+    }
+  }
 }
 
 let index = 0;
@@ -102,54 +144,10 @@ let counter = 0;
 
 function draw() {
   background("#191414");
-  if (finalArtists.length === totalBubbles) {
-    while (artistObjectArray.length < finalArtists.length) {
-      let overlapping = false;
-      let proposalBubble;
-      let radius;
-      if (finalArtists[index].belonging == "mutual") {
-        radius = 75;
-      } else if (finalArtists[index].belonging == "user1") {
-        radius = 75 - (index - mutualArtists.length) * 4;
-      } else {
-        radius = 75 - (index - (mutualArtists.length + user1length)) * 4;
-      }
-      proposalBubble = new artistBubble(
-        radius,
-        finalArtists[index].belonging,
-        imageArray[index],
-        finalArtists[index].name,
-        finalArtists[index].external_urls.spotify
-      );
-      for (let j = 0; j < artistObjectArray.length; j++) {
-        let existingBubble = artistObjectArray[j];
-        let d = dist(
-          proposalBubble.x,
-          proposalBubble.y,
-          existingBubble.x,
-          existingBubble.y
-        );
-        if (d - 10 < proposalBubble.r + existingBubble.r) {
-          overlapping = true;
-          break;
-        }
-      }
-
-      if (!overlapping) {
-        index += 1;
-        artistObjectArray.push(proposalBubble);
-      }
-
-      counter++;
-      if (counter > 100000) {
-        break;
-      }
-    }
-    for (let i = 0; i < artistObjectArray.length; i++) {
-      artistObjectArray[i].draw();
-      artistObjectArray[i].hover();
-      artistObjectArray[i].click();
-    }
+  for (let i = 0; i < artistObjectArray.length; i++) {
+    artistObjectArray[i].draw();
+    artistObjectArray[i].hover();
+    artistObjectArray[i].click();
   }
 }
 
