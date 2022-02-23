@@ -14,13 +14,16 @@ const __dirname = path.dirname(__filename);
 // initializing express
 const app = express();
 const port = process.env.PORT || 8888;
+
 // configuring usage of static files with express
 app.use(express.static(__dirname));
 app.use(express.static("public"));
 
+// setting up environment variables
 let client_id = process.env.CLIENT_ID;
 let client_secret = process.env.CLIENT_SECRET;
 let redirect_uri = process.env.REDIRECT_URI;
+
 let user;
 
 // program to generate random strings for Spotify API state
@@ -71,7 +74,7 @@ app.get("/callback", (req, res) => {
   if (reqState.slice(1) != state.slice(1)) {
     res.send("State Mismatch");
   } else {
-    // convert this string to base64 (requirment of spotify api)
+    // convert this string to base64 using btoa (requirment of spotify api)
     console.log(btoa(client_id + ":" + client_secret));
     async function getToken() {
       const response = await fetch("https://accounts.spotify.com/api/token", {
@@ -85,6 +88,7 @@ app.get("/callback", (req, res) => {
       return response.json();
     }
     getToken().then((data) => {
+      // use the token from the previous call in this API call
       fetch(
         "https://api.spotify.com/v1/me/top/artists?limit=50&time_range=medium_term",
         {

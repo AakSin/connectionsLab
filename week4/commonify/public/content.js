@@ -35,6 +35,7 @@ fetch("./user1.json")
             if (user1[i].id == user2[j].id) {
               mutualArtists.push(user1[i]);
               artist = user1[i];
+              // belonging basically means which category of bubble is it - mutual, user A or user B
               artist["belonging"] = "mutual";
               finalArtists.push(artist);
             }
@@ -118,9 +119,9 @@ function draw() {
     imagesCreated = true;
   }
   if (imagesCreated) {
+    // bubble packing algo
     while (artistBubblesArray.length < finalArtists.length) {
       let overlapping = false;
-      let proposalBubble;
       let radius;
       if (finalArtists[index].belonging == "mutual") {
         radius = 75;
@@ -129,7 +130,7 @@ function draw() {
       } else {
         radius = 75 - (index - (mutualArtists.length + user1length)) * 4;
       }
-      proposalBubble = new artistBubble(
+      let proposalBubble = new artistBubble(
         radius,
         finalArtists[index].belonging,
         imageArray[index],
@@ -144,19 +145,20 @@ function draw() {
           existingBubble.x,
           existingBubble.y
         );
-        if (d - 10 < proposalBubble.r + existingBubble.r) {
+        // if the distance between the bubbles + stroke is less than their readius then discard this proposal bubble
+        if (d - 20 < proposalBubble.r + existingBubble.r) {
           overlapping = true;
           break;
         }
       }
-
+      //  if proposal bubble didn't overlap with any previous bubbles then include it in the tally
       if (!overlapping) {
         index += 1;
         artistBubblesArray.push(proposalBubble);
       }
-
+      // this 200000 is an arbitrary protection number, basically if we don't get a bubble after 100000 tries then just skip this
       counter++;
-      if (counter > 100000) {
+      if (counter > 20000) {
         break;
       }
     }
@@ -183,6 +185,7 @@ class artistBubble {
     this.label = new Label(_name);
   }
   draw() {
+    // outline circle color depending on belonging
     if (this.belonging == "user1") {
       fill(255, 138, 138);
     } else if (this.belonging == "user2") {
@@ -191,6 +194,7 @@ class artistBubble {
       fill(193, 130, 243);
     }
     circle(this.x, this.y, this.r * 2 + 10);
+    // masking processs
     let circleMask = createGraphics(this.r * 2, this.r * 2);
     circleMask.fill("rgba(0,0,0,1)");
     circleMask.circle(this.r, this.r, this.r * 2);
@@ -201,22 +205,26 @@ class artistBubble {
   hover() {
     if (dist(mouseX, mouseY, this.x, this.y) <= this.r) {
       cursor(HAND);
+      // draw a label at mouse position
       this.label.draw(mouseX, mouseY);
     }
   }
   click() {
-    if (dist(mouseX, mouseY, this.x, this.y) <= this.r && mouseIsPressed) {
+    if (dist(mouseX, mouseY, this.x, this.y) <= this.r) {
       window.open(this.link);
     }
   }
 }
 class Label {
   constructor(_name) {
-    (this.name = _name), (this.fSize = 30);
+    (this.name = _name),
+      // fsize is fontSize
+      (this.fSize = 30);
   }
   draw(_x, _y) {
     let x = _x - 10;
     let y = _y - 10;
+    // procedures for drawing box + text for label
     let bbox = font.textBounds(this.name, 0, 0, this.fSize);
     noStroke();
     fill(0, 0, 0, (255 * 3) / 4);
