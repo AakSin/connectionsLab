@@ -19,84 +19,80 @@ fetch("./user1.json")
   .then((response) => response.json())
   .then((data) => {
     user1 = data.items;
-    if (user1 && user2) {
-      dataFetched = true;
-    }
-  });
-fetch("./user2.json")
-  .then((response) => response.json())
-  .then((data) => {
-    user2 = data.items;
 
-    // loop for finding mutual artists among 2 users
-    for (let i = 0; i < user1.length; i++) {
-      for (let j = 0; j < user2.length; j++) {
-        // if it reaches total number of bubbles then break
-        if (mutualArtists.length == totalBubbles) {
-          break;
-        }
-        if (user1[i].id == user2[j].id) {
-          mutualArtists.push(user1[i]);
-          artist = user1[i];
-          artist["belonging"] = "mutual";
-          finalArtists.push(artist);
-        }
-      }
-    }
+    fetch("./user2.json")
+      .then((response) => response.json())
+      .then((data) => {
+        user2 = data.items;
 
-    // split the remaining bubbles in 2 for the users
-    user1length = Math.ceil((totalBubbles - mutualArtists.length) / 2);
-    user2length = Math.floor((totalBubbles - mutualArtists.length) / 2);
-
-    let counter = 0;
-    for (let i = 0; i < user1.length; i++) {
-      let occursIn = false;
-      // if artist is already in mutual break
-      for (let j = 0; j < mutualArtists.length; j++) {
-        if (user1[i].id == mutualArtists[j].id) {
-          occursIn = true;
-          break;
+        // loop for finding mutual artists among 2 users
+        for (let i = 0; i < user1.length; i++) {
+          for (let j = 0; j < user2.length; j++) {
+            // if it reaches total number of bubbles then break
+            if (mutualArtists.length == totalBubbles) {
+              break;
+            }
+            if (user1[i].id == user2[j].id) {
+              mutualArtists.push(user1[i]);
+              artist = user1[i];
+              artist["belonging"] = "mutual";
+              finalArtists.push(artist);
+            }
+          }
         }
-      }
-      // break it when it reaches the required length
-      if (counter == user1length) {
-        break;
-      }
-      if (!occursIn) {
-        counter += 1;
-        artist = user1[i];
-        artist["belonging"] = "user1";
-        finalArtists.push(artist);
-      }
-    }
-    // same as above but for user 2 now [TODO: turn this into a function]
-    counter = 0;
-    for (let i = 0; i < user2.length; i++) {
-      let occursIn = false;
-      for (let j = 0; j < mutualArtists.length; j++) {
-        if (user2[i].id == mutualArtists[j].id) {
-          occursIn = true;
-          break;
-        }
-      }
-      if (counter == user2length) {
-        break;
-      }
-      if (!occursIn) {
-        counter += 1;
-        artist = user2[i];
-        artist["belonging"] = "user2";
-        finalArtists.push(artist);
-      }
-    }
 
-    const mutualP = document.getElementById("legend-ul");
-    mutualP.innerHTML = `<li class="legend-li" id="user1-li">${user1length} User A</li>
+        // split the remaining bubbles in 2 for the users
+        user1length = Math.ceil((totalBubbles - mutualArtists.length) / 2);
+        user2length = Math.floor((totalBubbles - mutualArtists.length) / 2);
+
+        let counter = 0;
+        for (let i = 0; i < user1.length; i++) {
+          let occursIn = false;
+          // if artist is already in mutual break
+          for (let j = 0; j < mutualArtists.length; j++) {
+            if (user1[i].id == mutualArtists[j].id) {
+              occursIn = true;
+              break;
+            }
+          }
+          // break it when it reaches the required length
+          if (counter == user1length) {
+            break;
+          }
+          if (!occursIn) {
+            counter += 1;
+            artist = user1[i];
+            artist["belonging"] = "user1";
+            finalArtists.push(artist);
+          }
+        }
+        // same as above but for user 2 now [TODO: turn this into a function]
+        counter = 0;
+        for (let i = 0; i < user2.length; i++) {
+          let occursIn = false;
+          for (let j = 0; j < mutualArtists.length; j++) {
+            if (user2[i].id == mutualArtists[j].id) {
+              occursIn = true;
+              break;
+            }
+          }
+          if (counter == user2length) {
+            break;
+          }
+          if (!occursIn) {
+            counter += 1;
+            artist = user2[i];
+            artist["belonging"] = "user2";
+            finalArtists.push(artist);
+          }
+        }
+
+        const mutualP = document.getElementById("legend-ul");
+        mutualP.innerHTML = `<li class="legend-li" id="user1-li">${user1length} User A</li>
           <li class="legend-li" id="user2-li">${user2length} User B</li>
           <li class="legend-li" id="mutual-li">${mutualArtists.length} Common</li>`;
-    if (user1 && user2) {
-      dataFetched = true;
-    }
+        dataFetched = true;
+      });
   });
 
 function preload() {
