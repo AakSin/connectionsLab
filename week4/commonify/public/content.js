@@ -166,8 +166,12 @@ function draw() {
     bubblesCreated = true;
   }
   if (bubblesCreated) {
+    // I had to create 2 loops of the same thing because if they are created in the same loop then some labels appear behind the circle
+    // I want all the labels to appear above the circles
     for (let i = 0; i < artistBubblesArray.length; i++) {
       artistBubblesArray[i].draw();
+    }
+    for (let i = 0; i < artistBubblesArray.length; i++) {
       artistBubblesArray[i].hover();
     }
   }
