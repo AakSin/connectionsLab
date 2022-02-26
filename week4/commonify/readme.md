@@ -62,17 +62,34 @@ https://github.com/AakSin/connectionsLab/blob/cdd778eae9877d731c6e309a99b942eccd
 
 https://github.com/AakSin/connectionsLab/blob/cdd778eae9877d731c6e309a99b942eccdc5260f/week4/commonify/public/content.js#L12-L26
 
+# Learning
 
+- I learnt about `createGraphics` and masking in p5.js which I shall be using a lot in my upcoming projects.
+- Learning how to handle OAuth2 tokens (something that has been a huge hinderance to me in a previous projects). OAuth2 APIs were the only APIs I was not comfortable using earlier but now I feel confident enought to start a project with any API that uses OAuth.
+- I understand handling async calls in Javasrcipt better now. Async, await, fetch used to confuse me and to be honest I still am confused with how Javascript does it (and the reason I still had to use flags) but I have a better grasp over it now.
+- Deploying only a folder on Heroku (I had deployed entire repos before but for this project I learnt how to deploy just the folder for our week).
   
-# Future Plans
+# Next steps
   
-  I'd like to add a drop down menu which would let the user select between the time ranges instead of the default medium one right now.
-  
-  I am still confused about how I will be doing the visualizations. I might switch my dataset too since I can now easily access the spotify API. 
-  
-  Either the visualizations will be based on the Figma Prototype linked above or I might take top tracks of a user and embed small music players for them. I am still deciding ways to integrate this with my music player too. One of the plans is to combine this with my music player and when a user clicks on artist, the 30 second spotify song demo of that artist starts playing on my music player.
-  
-  If I chose to stick with something similar to Figma, the artists will be represnted as small circles and lines will be drawn between the common ones. I talked to a friend who was good at UI and she recommended that I only display the common artists. That is something to consider too.
-  
-  
+- Fix the site slowing down and crashing as time goes on. It seems that something is clogging up the memory or processing of the host computer whenever the site is opened, causing the site to eventually crash.
+- Change User A and User B to the actual Spotify profile name (this involves a set of new API calls to Spotify)
+  - The login buttons at the top would just say login instead of login user A.
+- Add a way for the users to select what timeframe of data they want to comapre - short, medium, long (medium being the default and only one right now)
+- Fix the Artist Label (centering text in a box and padding was very hard in p5)
+  - Make it so there is less space on the X-axis for longer artist names
+  - Create some sort of check so that if the artist label is going out the screen then display it the opposite way (for bubbles that spawn on the edge of the screen)
+  - Make the label cleaner, prettier, play with color/bg etc till it becomes good
+- Make it somehow easier to understand the presented data. I am still not a huge fan of the color coding decision. 
 
+- Include genre data as well
+  - Compare top genres of 2 users (?)
+- Improve the time and space complexity of the program in general. It feels very inefficient to me right now with the way I have written it.
+  
+# References - Documentation. Youtube Videos. Code Snippets.
+- Handling Spotify’s OAuth2 Flow
+  - [Spotify OAuth2 Documentation](https://developer.spotify.com/documentation/general/guides/authorization/)
+  - [API-University’s YouTube Video on Spotify API](https://www.youtube.com/watch?v=yAXoOolPvjU)
+  - [Express.js Documentation](https://expressjs.com/en/guide/routing.html)
+- [Dan Shiffman’s video on placing circles randomly without them overlapping](https://www.youtube.com/watch?v=XATr_jdh-44)
+- [Professor Mathura’s code snippet on masks in p5.js](https://editor.p5js.org/itp42/sketches/4xu4RwJQF)
+- [Stack Overflow answers for small queries](https://stackoverflow.com/)
