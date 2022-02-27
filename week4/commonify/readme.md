@@ -4,7 +4,7 @@ Hosted live at [https://commonify.herokuapp.com/](https://commonify.herokuapp.co
 
 # Inspiration & Influences
 
-<img src="https://i.imgur.com/rjdIo9M.jpg" width=500> <img src="https://i.imgur.com/YeEPD85.jpg" width=500>
+<img src="https://i.gyazo.com/3cc413a42256cbc4381ade13230447f3.gif" alt="Music Player Figma Proto" width="1000"/>
 
 The idea was to build on top of my project for the previous week - [a music player](https://aaksin.github.io/connectionsLab/week2). I have expanded on the various concepts I thought up of in the Decisions part below. The inspiration mainly was to work with any sort of musical data and present it in an engaging way.
 
@@ -22,8 +22,8 @@ These are written into a JSON file then. Then the file called content.js fetches
 
 # Decisions
 ## Conceptual - Ideas & Sketches
+<img src="https://i.imgur.com/rjdIo9M.jpg" width=500> <img src="https://i.imgur.com/YeEPD85.jpg" width=500>
 
-<img src="https://i.gyazo.com/3cc413a42256cbc4381ade13230447f3.gif" alt="Music Player Figma Proto" width="1000"/>
 
 I first started out with the idea of music visualization. I was planning on my dataset to be the song's amplitudes or frequencies and then using that to create various visualizations for the current song playing. Then I shifted to the idea of using some API like Spotify's to gather data about the current song playing. For example, I thought of displaying album data, song lyrics, artist info etc. for the current song playing. While playing around with the API, I came across a method to fetch top 50 artists or tracks of an user. I then decided upon the idea of displaying the top artists of 2 users and then creating some visualizations for the common one.
 
