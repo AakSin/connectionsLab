@@ -35,6 +35,7 @@
               <%= genreArtists[artist].genre.toString()%>
             </h3>
             <p class="artist-description">
+              <!-- only display first 200 words + ... -->
               <%=genreArtists[artist].description.substring(0,200)+"..."%>
             </p>
             <a href="/<%=artist%>">Learn More</a>
