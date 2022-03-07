@@ -7,10 +7,16 @@ let artists;
 let rawdata = fs.readFileSync("artists.json");
 artists = JSON.parse(rawdata);
 
-app.use("/", express.static("public"));
+app.set("view engine", "ejs");
+app.use(express.static("public"));
 
-app.get("/info/:artist", (req, res) => {
-  res.json(artists[req.params.artist]);
+app.get("/:artist", (req, res) => {
+  let artist = artists[req.params.artist];
+  if (artist) {
+    res.render("artist", { artist, name: req.params.artist });
+  } else {
+    res.send("No such artist found");
+  }
 });
 
 app.get("/artists", (req, res) => {

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>genre.search</title>
+    <link href="style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css"
+      integrity="sha512-bSncow0ApIhONbz+pNI52n0trz5fMWbgteHsonaPk42JbunIeM9ee+zTYAUP1eLPky5wP0XZ7MSLAPxKkwnlzw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main>
+      <section>
+        <img src="<%=artist.image%>" alt="artist-image" />
+        <a href="<%=artist.Spotify%>">
+          <i class="fa-brands fa-spotify"></i>
+        </a>
+        <a href="<%=artist.Youtube%>">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="<%=artist["Apple Music"]%>">
+          <i class="fa-brands fa-apple"></i>
+        </a>
+      </section>
+      <section>
+        <h1><%= name %></h1>
+        <p>
+          <%= artist.genre.toString()%>
+        </p>
+        <p><%=artist.description%></p>
+        <%-artist.embed%>
+      </section>
+    </main>
+  </body>
+</html>
