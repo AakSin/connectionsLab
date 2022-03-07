@@ -19,10 +19,10 @@ app.get("/:artist", (req, res) => {
   }
 });
 
-app.get("/artists", (req, res) => {
+app.get("/", (req, res) => {
+  let genreArtists = {};
   if (req.query.genre) {
     let genres = req.query.genre;
-    let genreArtists = {};
     genres = genres.split(",");
     for (let artist in artists) {
       for (let i = 0; i < genres.length; i++) {
@@ -31,10 +31,11 @@ app.get("/artists", (req, res) => {
         }
       }
     }
-    res.json(genreArtists);
   } else {
-    res.json(artists);
+    genreArtists = artists;
   }
+  console.log(genreArtists);
+  res.render("main", { genreArtists });
 });
 
 app.listen(port, () => {

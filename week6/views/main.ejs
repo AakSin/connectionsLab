@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>genre.search</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>genre.search</h1>
+    <section>
+      <p>
+        Enter a genre (or a list of genres seperated by a comma) to get artists
+        in that genre
+      </p>
+      <input type="text" />
+      <div class="artist-list">
+        <%for(let artist in genreArtists){%>
+        <div class="artist-box">
+          <img src="<%=genreArtists[artist].image%>" alt="artist-image" />
+          <div class="artist-info">
+            <h2 class="artist-title"><%=artist%></h2>
+            <h3 class="artist-genre">
+              <%= genreArtists[artist].genre.toString()%>
+            </h3>
+            <p class="artist-description">
+              <%=genreArtists[artist].description.substring(0,200)+"..."%>
+            </p>
+            <a href="/<%=artist%>">Learn More</a>
+          </div>
+        </div>
+        <%}%>
+      </div>
+    </section>
+  </body>
+</html>
