@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>genre.search</title>
     <link href="style.css" rel="stylesheet" />
+    <script src="app.js"></script>
   </head>
   <body>
     <h1>genre.search</h1>
@@ -14,7 +15,7 @@
         Enter a genre (or a list of genres seperated by a comma) to get artists
         in that genre
       </p>
-      <input type="text" />
+      <input type="text" id="genre-input" />
       <div class="artist-list">
         <%for(let artist in genreArtists){%>
         <div class="artist-box">

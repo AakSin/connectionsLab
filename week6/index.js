@@ -8,7 +8,7 @@ let rawdata = fs.readFileSync("artists.json");
 artists = JSON.parse(rawdata);
 
 app.set("view engine", "ejs");
-app.use(express.static("public"));
+app.use(express.static("views/public"));
 
 app.get("/:artist", (req, res) => {
   let artist = artists[req.params.artist];
@@ -34,7 +34,6 @@ app.get("/", (req, res) => {
   } else {
     genreArtists = artists;
   }
-  console.log(genreArtists);
   res.render("main", { genreArtists });
 });
 
