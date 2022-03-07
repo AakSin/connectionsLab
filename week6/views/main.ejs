@@ -5,21 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>genre.search</title>
-    <link href="style.css" rel="stylesheet" />
+    <link href="main.css" rel="stylesheet" />
     <script src="app.js"></script>
   </head>
   <body>
     <h1>genre.search</h1>
     <section>
-      <p>
-        Enter a genre (or a list of genres seperated by a comma) to get artists
-        in that genre
-      </p>
-      <input type="text" id="genre-input" />
-      <div class="artist-list">
+      <div id="input-area">
+        <p>
+          Enter genres seperated by comma (no spaces) and then hit enter to get
+          artists in that genre
+        </p>
+        <input type="text" id="genre-input" placeholder="rap,pop" />
+      </div>
+      <div id="artist-list">
         <%for(let artist in genreArtists){%>
         <div class="artist-box">
-          <img src="<%=genreArtists[artist].image%>" alt="artist-image" />
+          <div>
+            <img
+              src="<%=genreArtists[artist].image%>"
+              class="artist-image"
+              alt="arti
+            st image"
+            />
+          </div>
           <div class="artist-info">
             <h2 class="artist-title"><%=artist%></h2>
             <h3 class="artist-genre">

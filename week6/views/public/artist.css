@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap");
+html,
+body {
+  padding: 2vh 2vw;
+  margin: 0;
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 16px;
+}
+
+main {
+  padding: 50px 3vw;
+  display: flex;
+}
+#logos {
+  text-align: center;
+  padding-top: 5vh;
+}
+#logos a {
+  color: black;
+  text-decoration: none;
+  font-size: 3rem;
+}
+#logos i {
+  font-style: normal;
+}
+#artist-image {
+  width: 30vw;
+  height: 30vw;
+  object-fit: cover;
+}
+#image-link-box,
+#info-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+#info-box {
+  padding: 0 5vw;
+}
+#home {
+  text-decoration: none;
+}
+h1 {
+  margin: 0;
+  color: black;
+  font-size: 1.5rem;
+}
+h2 {
+  font-size: 3rem;
+  margin: 2vh;
+}
+
+#artist-genre {
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  color: #000000;
+  font-size: 1rem;
+}
+
+#artist-description {
+  margin-bottom: 50px;
+}

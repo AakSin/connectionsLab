@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap");
+html,
+body {
+  padding: 2vh 2vw;
+  margin: 0;
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 16px;
+}
+body {
+  display: flex;
+}
+h1 {
+  padding-right: 2vw;
+  text-align: center;
+}
+#genre-input {
+  width: 90%;
+  margin-bottom: 10vh;
+  height: 30px;
+  border-radius: 9px;
+  padding: 2px 10px;
+  border: solid 1px #8b8b8b;
+}
+#genre-input,
+.artist-genre {
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  color: #000000;
+  font-size: 1rem;
+}
+#input-area {
+  text-align: center;
+}
+#input-area p {
+  margin-bottom: 5vh;
+}
+.artist-image {
+  object-fit: cover;
+  height: 15vw;
+  width: 15vw;
+}
+.artist-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5vh;
+}
+.artist-info {
+  padding: 1vh 1vw;
+  padding-left: 5vw;
+}
+.artist-title,
+.artist-genre,
+.artist-description {
+  margin: 2vh 0;
+}
+.artist-title {
+  font-weight: 400;
+  font-size: 1.75rem;
+}
+.artist-description {
+  font-size: 1rem;
+}
+.artist-info a {
+  color: black;
+}
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}

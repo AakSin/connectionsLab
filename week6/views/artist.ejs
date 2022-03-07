@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>genre.search</title>
-    <link href="style.css" rel="stylesheet" />
+    <link href="artist.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css"
@@ -15,9 +15,11 @@
     />
   </head>
   <body>
+     <a id="home" href="/"><h1>genre.search</h1></a>
     <main>
-      <section>
-        <img src="<%=artist.image%>" alt="artist-image" />
+      <section id="image-link-box">
+        <img src="<%=artist.image%>" alt="artist image" id="artist-image" />
+        <div id="logos">
         <a href="<%=artist.Spotify%>">
           <i class="fa-brands fa-spotify"></i>
         </a>
@@ -27,13 +29,14 @@
         <a href="<%=artist["Apple Music"]%>">
           <i class="fa-brands fa-apple"></i>
         </a>
+        </div>
       </section>
-      <section>
-        <h1><%= name %></h1>
-        <p>
+      <section id="info-box">
+        <h2><%= name %></h1>
+        <p id="artist-genre">
           <%= artist.genre.toString()%>
         </p>
-        <p><%=artist.description%></p>
+        <p id="artist-description"><%=artist.description%></p>
         <%-artist.embed%>
       </section>
     </main>
