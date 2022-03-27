@@ -10,10 +10,10 @@ class projectile {
   draw() {
     if (this.type == 1) {
       image(projectile1, this.x, this.y, this.h, this.w);
-      this.y += 2;
+      this.y += 3;
     } else {
       image(projectile2, this.x, this.y, this.h, this.w);
-      this.y -= 2;
+      this.y -= 3;
     }
   }
 }

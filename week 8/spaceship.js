@@ -5,13 +5,13 @@ class Spaceship {
     this.w = 100;
     this.h = 100;
     this.y = 50;
-    this.health = 100;
+    this.health = 5;
   }
   draw() {
     if (this.type == 1) {
       image(ship1, this.x, this.y, this.w, this.h);
     } else {
-      this.y = height - 150;
+      this.y = height - this.h - 50;
       image(ship2, this.x, this.y, this.w, this.h);
     }
   }
@@ -55,12 +55,10 @@ class Spaceship {
         projectile1Array.push(
           new projectile(1, this.x + this.w / 2, this.y + this.h)
         );
-        print(projectile1Array);
       }
     } else {
       if (keyIsDown(16)) {
         projectile2Array.push(new projectile(2, this.x + this.w / 2, this.y));
-        print(projectile2Array);
       }
     }
   }
