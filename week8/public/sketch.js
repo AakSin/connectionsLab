@@ -21,11 +21,20 @@ function setup() {
   projectile1 = loadImage("assets/projectile1.png");
   projectile2 = loadImage("assets/projectile2.png");
 }
-socket.on("ship1hit", (data) => {
-  spaceship1.health = data;
+
+socket.on("ship2shoot", (data) => {
+  projectile2Array.push(new projectile(2, data.x + data.w / 2, data.y));
 });
-socket.on("ship2hit", (data) => {
-  spaceship2.health = data;
+socket.on("ship1shoot", (data) => {
+  projectile1Array.push(
+    new projectile(1, data.x + data.w / 2, data.y + data.h)
+  );
+});
+socket.on("ship1pos", (data) => {
+  spaceship1.x = data;
+});
+socket.on("ship2pos", (data) => {
+  spaceship2.x = data;
 });
 function draw() {
   background(bg);
@@ -60,7 +69,7 @@ function draw() {
       ) {
         spaceship2.health -= 1;
         console.log("ship 2 hit", spaceship2.health);
-        socket.emit("ship2hit", spaceship2.health);
+
         projectile1Array.splice(i, 1);
       }
     }
@@ -77,7 +86,6 @@ function draw() {
         projectile2Array[i].x < spaceship1.x + spaceship1.w
       ) {
         spaceship1.health -= 1;
-        socket.emit("ship1hit", spaceship1.health);
         projectile2Array.splice(i, 1);
       }
     }
