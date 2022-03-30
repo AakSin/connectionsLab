@@ -1,3 +1,14 @@
+# Description
+
+Hosted live on <a href="https://socketshooter.herokuapp.com/"> https://socketshooter.herokuapp.com/ </a>
+
+Player 1 controls - Left and Right Arrow key to move, space bar to shoot
+
+Player 2 controls - A and D letters to move, shift to shoot
+
+The ships move on the horizontal axis. The aim is to shoot down the other person's ship.
+
+
 # Planning & Inspiration
 
 The idea of the game came from various arcade space shootem-ups like _Space Invaders_ or _Spacewar!_ 
@@ -30,3 +41,12 @@ key was being pressed and then simulating the key presses using javascript on th
 Another challenge was that initally I had set canvas height and width to window height and width. The game started being buggy when played on different viewports then and thus I decided to go for a fixed viewport.
 
 # Learnings & To-Dos
+
+This was my first time building something realtime. I have never worked with sockets in any way or form so it was pretty confusing doing a lot of the tasks. I am glad I was able to get a simple understanding of sockets through this project. The things I'd like to work on - 
+
+
+- Add a title screen to the game explaining the controls
+- Add music and sound effects to the game
+- Maybe re-do the art yourself
+- Fix bug wherein at times, it shows a win screen for one client but not for the other
+  - Investigate if there are inconsistencies in health between 2 clients
