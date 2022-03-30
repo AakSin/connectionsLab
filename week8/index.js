@@ -33,10 +33,4 @@ io.sockets.on("connection", function (socket) {
   socket.on("ship2shoot", (data) => {
     socket.broadcast.emit("ship2shoot", data);
   });
-  socket.on("ship1hit", (data) => {
-    socket.broadcast.emit("ship1hit", data);
-  });
-  socket.on("ship2hit", (data) => {
-    socket.broadcast.emit("ship2hit", data);
-  });
 });
