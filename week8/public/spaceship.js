@@ -5,7 +5,7 @@ class Spaceship {
     this.w = 100;
     this.h = 100;
     this.y = 50;
-    this.health = 20;
+    this.health = 100;
   }
   draw() {
     if (this.type == 1) {
