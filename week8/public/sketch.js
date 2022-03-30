@@ -67,7 +67,7 @@ function draw() {
         projectile1Array[i].x > spaceship2.x &&
         projectile1Array[i].x < spaceship2.x + spaceship2.w
       ) {
-        spaceship2.health -= 5;
+        spaceship2.health -= 10;
         projectile1Array.splice(i, 1);
       }
     }
@@ -83,7 +83,7 @@ function draw() {
         projectile2Array[i].x > spaceship1.x &&
         projectile2Array[i].x < spaceship1.x + spaceship1.w
       ) {
-        spaceship1.health -= 5;
+        spaceship1.health -= 10;
         projectile2Array.splice(i, 1);
       }
     }
