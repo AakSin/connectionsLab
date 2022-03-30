@@ -1,3 +1,10 @@
+//Open and connect socket
+let socket = io();
+//Listen for confirmation of connection
+socket.on("connect", function () {
+  console.log("Connected");
+});
+
 let spaceship1 = new Spaceship(1);
 let spaceship2 = new Spaceship(2);
 projectile1Array = [];
@@ -7,14 +14,19 @@ let spaceship2HealthFull = spaceship2.health;
 let spaceship1Health;
 let spaceship2Health;
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(800, 800);
   ship1 = loadImage("assets/ship1.png");
   ship2 = loadImage("assets/ship2.png");
   bg = loadImage("assets/bg.jpg");
   projectile1 = loadImage("assets/projectile1.png");
   projectile2 = loadImage("assets/projectile2.png");
 }
-
+socket.on("ship1hit", (data) => {
+  spaceship1.health = data;
+});
+socket.on("ship2hit", (data) => {
+  spaceship2.health = data;
+});
 function draw() {
   background(bg);
   spaceship1Health = spaceship1.health;
@@ -47,6 +59,8 @@ function draw() {
         projectile1Array[i].x < spaceship2.x + spaceship2.w
       ) {
         spaceship2.health -= 1;
+        console.log("ship 2 hit", spaceship2.health);
+        socket.emit("ship2hit", spaceship2.health);
         projectile1Array.splice(i, 1);
       }
     }
@@ -62,8 +76,9 @@ function draw() {
         projectile2Array[i].x > spaceship1.x &&
         projectile2Array[i].x < spaceship1.x + spaceship1.w
       ) {
-        projectile2Array.splice(i, 1);
         spaceship1.health -= 1;
+        socket.emit("ship1hit", spaceship1.health);
+        projectile2Array.splice(i, 1);
       }
     }
   }
