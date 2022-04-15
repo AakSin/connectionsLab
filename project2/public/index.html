@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css?family=Offside"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <title>symphonizer.io</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>SYMPHONIZER.IO</h1>
+      <h2>create musics and visuals with your friends</h2>
+
+      <div class="input_container">
+        <div class="input_container-item-create">
+          <div >
+            <h3>
+                create your own room
+              </h3>
+            <div class="input_container-item-input">
+              <div>
+                 <h4>visuals</h4>
+              <p>
+                <input type="radio" name="visuals" value="fire" />
+                <label>ignis</label>
+              </p>
+              <p>
+                <input type="radio" name="visuals" value="earth" />
+                <label>terra</label>
+              </p>
+              <p>
+                <input type="radio" name="visuals" value="water" />
+                <label>aqua</label>
+              </p>
+              </div>
+             
+            
+            <div>
+            
+                <h4>audio</h4>
+              <p>
+                <input type="radio" name="audio" value="edm" />
+                <label>futuristic</label>
+              </p>
+              <p>
+                <input type="radio" name="audio" value="lofi" />
+                <label>sanguine</label>
+              </p>
+              <p>
+                <input type="radio" name="audio" value="orchestral" />
+                <label>orchestral</label>
+              </p>
+           
+              
+            </div>
+              </div>
+          </div>
+          <div class="input_container-item-button">
+            <button id="create">create</button>
+          </div>
+        </div>
+        <div>
+          <h3 style="padding:0 50px;">
+            or
+          </h3>
+        </div>
+        <div class="input_container-item-join">
+          <div class="input_container-item-input">
+            <div>
+              <h3>
+                join an existing room
+              </h3>
+              <input type="text" id="join-form" placeholder="enter room code" />
+            </div>
+          </div>
+          <div class="input_container-item-button">
+            <button id="join">join</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
