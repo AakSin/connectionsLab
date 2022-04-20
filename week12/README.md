@@ -28,11 +28,8 @@ It just needed lighting, post-prodction and wireframing for it to start looking 
 I realized it still looked different from the artist's render. I asked <a href="https://jasoncruz.co/"> Jason Cruz </a>, another NYUAD student, as to how the final render had blue lines. Jason has a lot of experience in 3D stuff. He told me to try to find a way to enable wireframes in the code. After I enbaled, wireframes in my render, it finally came in together beautifully.
 
 <img src="https://i.imgur.com/9mwqXAG.png">
-<video controls>
+<a href="https://gyazo.com/b5aedb55c993c4ba541c0da397b5a1a5"> Link to GIF </a>
 
-  <source src="https://i.imgur.com/lUhp495.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
 I then took some code from the project I made in week 2 - the music player - and implemented it on top of this to create an immersive rabbit hole of sound, color and shapes. 
 
 # Learnings, To-Do
