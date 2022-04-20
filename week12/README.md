@@ -25,4 +25,4 @@ It just needed lighting, post-prodction and wireframing for it to start looking 
 
 <img src="https://i.imgur.com/4RpgXXz.png">
 
-I realized it still looked different from the artist's render. I asked <a href="https://jasoncruz.co/"> Jason Cruz, another NYUAD student, as to how the final render had blue lines. Jason has a lot of experience in 3D stuff. He told me to try to find a way to enable wireframes in the code. After I enbaled, wireframes in my render, it finally came in together beautifully.
+I realized it still looked different from the artist's render. I asked <a href="https://jasoncruz.co/"> Jason Cruz </a>, another NYUAD student, as to how the final render had blue lines. Jason has a lot of experience in 3D stuff. He told me to try to find a way to enable wireframes in the code. After I enbaled, wireframes in my render, it finally came in together beautifully.
