@@ -5,7 +5,7 @@
 I was looking around the libraries we had to create this project with. I looked into ml5.js a lot first becaues I planned on using that. I realized for the 
 kind of projects I wanted to create, I'd have to collect my own data and train my own model. I shifted my focus to three.js then as 3D visuals is something that has intrigued me for a long time. I have struggled with webGL in the past but really wanted to create something great this time. I looked around for ideas till I shifted my focus to the song I was listening at that time. It was <a href="https://www.youtube.com/watch?v=RWgpBlz16-s"> Seigfried by Frank Ocean. </a>
 
-It came to me then. A video I had seen 3 years ago. It was my first introduction to Frank Ocean and I still remember it vivdly. It used Seigfried as it's audio and Akira, a 1988 Japanese Cult Classic. The essence Akira in the city of Neo-Tokyo. It is a city that is alive and dead at the same time. Capitalism has taken it's toll on it. There is bright adverts and lights but the city speaks of desolation when you listen to it carefully. My aim was similar.
+It came to me then. A video I had seen 3 years ago. It was my first introduction to Frank Ocean and I still remember it vivdly. It used Seigfried as its audio and Akira, a 1988 Japanese Cult Classic. The essence of Akira in the city of Neo-Tokyo. It is a city that is alive and dead at the same time. Capitalism and consumerism has taken it's toll on it. There is bright adverts and lights but the city speaks of desolation when you listen to it carefully. My aim was to create a similar world.
 
 I set out on a journey on SketchFab to find a model most closest to my vision. I stumbled on three of them - the one <a href="https://sketchfab.com/3d-models/virtual-city-tilt-brush-5ab3706b14194516bf695add2d9cb9c0"> I am currently using </a>, <a href="https://sketchfab.com/3d-models/san-francisco-city-108841754fd3485886c1dde13301d341" > a model of San Fransisco </a> and <a href="https://sketchfab.com/3d-models/sci-fi-city-public-domain-b353532235bb4c45afeac578187c9be1" >another cybperpunk city model </a>. I liked this one the most and started testing it out with screenshots on Figma. 
 
@@ -44,3 +44,9 @@ I also managed to include lyrics in, as I promised in second week of classes whe
 - I would have liked to edit the audio to have more reverb, delay and sort of create a more transcendetal effect for the audience
 - I would have liked to add more interactions than simple panning and zooming for now. Maybe a way to speed up the camera, change the lighting, change the song, change the model etc.
 - The song player's inteface itself could have perhaps been more minimialist or even innovative. Some of the ideas I would have implemented if I had more time would have involed making the music player a part of the render itself (still not sure how I would have accessed clicking on it then), maybe make it veritcal etc.
+
+# Credit
+
+Credits to FactoryFifteen for their model
+
+<a href="https://sketchfab.com/3d-models/virtual-city-tilt-brush-5ab3706b14194516bf695add2d9cb9c0">https://sketchfab.com/3d-models/virtual-city-tilt-brush-5ab3706b14194516bf695add2d9cb9c0 </a>
