@@ -26,3 +26,21 @@ It just needed lighting, post-prodction and wireframing for it to start looking 
 <img src="https://i.imgur.com/4RpgXXz.png">
 
 I realized it still looked different from the artist's render. I asked <a href="https://jasoncruz.co/"> Jason Cruz </a>, another NYUAD student, as to how the final render had blue lines. Jason has a lot of experience in 3D stuff. He told me to try to find a way to enable wireframes in the code. After I enbaled, wireframes in my render, it finally came in together beautifully.
+
+<img src="https://i.imgur.com/9mwqXAG.png">
+<img src="https://im5.ezgif.com/tmp/ezgif-5-84d1534daa.gif">
+
+I then took some code from the project I made in week 2 - the music player - and implemented it on top of this to create an immersive rabbit hole of sound, color and shapes. 
+
+# Learnings, To-Do
+
+I finally feel like I have a more solid grasp on three.js / webGL or even 3D stuff in general.
+
+I also managed to include lyrics in, as I promised in second week of classes when I made the music player.
+
+## To-Do
+
+- The  artist's render in my opinion stil has some more polishing than my render. While, I like the direction I have gone in with my own play on the lighting I still would like to imbue some elements from the artist's render as well. His reflections are pristine, while I feel mine lack a certain clarity. Also, the buildings look better on closer inspection in his render, meanwhile mine they fall apart on zooming in.
+- I would have liked to edit the audio to have more reverb, delay and sort of create a more transcendetal effect for the audience
+- I would have liked to add more interactions than simple panning and zooming for now. Maybe a way to speed up the camera, change the lighting, change the song, change the model etc.
+- The song player's inteface itself could have perhaps been more minimialist or even innovative. Some of the ideas I would have implemented if I had more time would have involed making the music player a part of the render itself (still not sure how I would have accessed clicking on it then), maybe make it veritcal etc.
