@@ -83,3 +83,37 @@ https://github.com/AakSin/connectionsLab/blob/e6d40cbe8dc11d9b34b99be526b3db6705
 The bass basically involves rotating the drum setup by 90 degrees. If the x-coordinate of either of the hands crosses a certain threshold, then the play event is triggered for whichever y-coordinate the hand finishes on.
 
 https://github.com/AakSin/connectionsLab/blob/e6d40cbe8dc11d9b34b99be526b3db670511c0de/finalProject/camJam/public/jamground/classes/bassistCam.js#L40-L70
+
+
+## Sockets/P5LM
+
+I edited the p5lm file made by NYU's ITP and hijacked their socket connection to send in my data as well. This is because the p5lm code opens it's own socket connection and hence my socket connection wasn't working (expanded more in challenges). I use p5lm's getData method to do real time data communication between the clients, and depending on the information received that note is played. 
+
+https://github.com/AakSin/connectionsLab/blob/07ea8a5112b5c91a4a85fa0d50ac2eddecc7c2af/finalProject/camJam/public/jamground/index.js#L268-L338
+
+# Challenges
+
+## Two socket connections 
+
+The first major tech hiccup I had in this project was finding out that p5 live media opened up it's own socket connection. So my socket connection couldn't co-exist with it unless I forced it. I didn't want to force it for stability reasons as well I wanted to learn how p5 live media worked and editing it's internal code seemed like an interesting challenge. This was a complicated challenge that involved - 
+
+- Downloading p5lm's code and editing it for my purpose
+https://github.com/AakSin/connectionsLab/blob/07ea8a5112b5c91a4a85fa0d50ac2eddecc7c2af/finalProject/camJam/public/jamground/p5livemedia.js#L111
+
+- Passing down the p5lm to all my instrument classes as soon as this object would be initiliazed 
+https://github.com/AakSin/connectionsLab/blob/07ea8a5112b5c91a4a85fa0d50ac2eddecc7c2af/finalProject/camJam/public/jamground/index.js#L206-L213
+
+- Figuring out how to use it's socket's methods from inside of my p5 file as well because I couldn't edit the p5lm file all the time
+https://github.com/AakSin/connectionsLab/blob/07ea8a5112b5c91a4a85fa0d50ac2eddecc7c2af/finalProject/camJam/public/jamground/index.js#L143-L162
+
+## Program slowing down upon switching between instruments too much
+
+The program's frame rate would drop significantly when I switched between instruments too much. I did two things for this -
+
+- Upon the first time a new instrument class is initiliazed I decided to store it in a variable so the next time it is called we just assign this old object and there is no need to train the model again
+
+https://github.com/AakSin/connectionsLab/blob/07ea8a5112b5c91a4a85fa0d50ac2eddecc7c2af/finalProject/camJam/public/jamground/index.js#L27-L69
+
+- The professor recommended I switch away from frame count for deciding between when to play the next sound (my initial code worked like this) to using millis(timestamps).  This is because millis would work the same even when the frame rate of the program slowed down.
+
+https://github.com/AakSin/connectionsLab/blob/07ea8a5112b5c91a4a85fa0d50ac2eddecc7c2af/finalProject/camJam/public/jamground/classes/pianistCam.js#L33-L37
