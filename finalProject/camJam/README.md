@@ -117,3 +117,27 @@ https://github.com/AakSin/connectionsLab/blob/07ea8a5112b5c91a4a85fa0d50ac2eddec
 - The professor recommended I switch away from frame count for deciding between when to play the next sound (my initial code worked like this) to using millis(timestamps).  This is because millis would work the same even when the frame rate of the program slowed down.
 
 https://github.com/AakSin/connectionsLab/blob/07ea8a5112b5c91a4a85fa0d50ac2eddecc7c2af/finalProject/camJam/public/jamground/classes/pianistCam.js#L33-L37
+
+
+# Future Steps
+
+- The UI needs some work as suggested by the judges. I need to figure out a better way to explain how to play the instruments because even now with the instructions written out, people chose to ignore it and try going with the intuition. On this note, the instruments can be worked on to be more intuitive as well as reading instructions is fun for no one.
+- The drums are a bit clunky right now because if you bring your hand down from high up enough you will cross the threshold twice hence playing the drum twice. A friend recommended that depending on what distance you cross, play the drum that loud. So if you bring your hand down from a great distance make it louder. 
+- Similarly for the piano, upon holding the finger down the note is just repeated. The same friend suggested that upon holding the finger, the note should become longer in duration.
+- The guitar even after all this work is still a bit non-intuitive. I will try figuring out the most intuitive way to play guitar over a webcame
+- Add more sound modes so people can play jazz, metal or whatever genre they like
+- Add a music visualizer to use some whitespace
+- Add a virtual band that responds to facial expressions since I am already running ml5.js and accessing people's web cam. <a href="https://blog.tensorflow.org/2020/05/pose-animator-open-source-tool-to-bring-svg-characters-to-life.html"> Example </a>
+- Use AI/ML like <a href="https://magenta.tensorflow.org/js-announce"> magenta.js </a> to make better music with AI/ML
+
+# Credits
+
+Thank you to Joanna for recording the guitar
+
+Thank you to Saiki for recording the lead piano and bass
+
+Thank you to Hugo for helping me out with the music theory
+
+Thank you to Pauline and Sophie for bearing with me while I made them try out the product
+
+Thank you to everyone who user-tested this
