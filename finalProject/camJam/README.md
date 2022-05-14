@@ -56,3 +56,30 @@ I finally settled on a clean simple 4 person layout
 
 <img src="https://github.com/AakSin/aaksin-public/blob/main/camjam/4view.gif">
 
+## Coding/Implementation
+
+## ML5.js
+
+### Piano
+
+The piano works on <a href="https://learn.ml5js.org/#/reference/handpose"> handpose </a>. Handpose basically gives you the co-ordinate of each major bone on your fingers. I used that to check if the top most bone was below the middle one (i.e. finger being bent), if it was then play the note mapped to that finger
+
+https://github.com/AakSin/connectionsLab/blob/e6d40cbe8dc11d9b34b99be526b3db670511c0de/finalProject/camJam/public/jamground/classes/pianistCam.js#L53-L97
+
+### Drums
+
+The drums works by dividing the screen into 4 parts. Then whenever the y-axis of either of the wrists crosses a certain threshold (100 pixels) the playSound function is passed in the x-coordinate of the ending position of the wrist. This x-coordinate is checked where it lies in the 4 divisions of the screen and that sound is played. 
+
+https://github.com/AakSin/connectionsLab/blob/e6d40cbe8dc11d9b34b99be526b3db670511c0de/finalProject/camJam/public/jamground/classes/drummerCam.js#L40-L70
+
+### Guitar
+
+The guitar combines elements of both piano and drums. The left hand runs handpose and keeps track of which fingers are down. When it detects that the y-coordinate of the right wrist has crossed a certain threshold, the strum event is triggered, hence playing the chords for whom the finger is down.
+
+https://github.com/AakSin/connectionsLab/blob/e6d40cbe8dc11d9b34b99be526b3db670511c0de/finalProject/camJam/public/jamground/classes/guitaristCam.js#L46-L72
+
+### Bass
+
+The bass basically involves rotating the drum setup by 90 degrees. If the x-coordinate of either of the hands crosses a certain threshold, then the play event is triggered for whichever y-coordinate the hand finishes on.
+
+https://github.com/AakSin/connectionsLab/blob/e6d40cbe8dc11d9b34b99be526b3db670511c0de/finalProject/camJam/public/jamground/classes/bassistCam.js#L40-L70
