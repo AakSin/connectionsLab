@@ -20,7 +20,7 @@ let db = new Datastore({
 }); //creates a new one if needed
 db.loadDatabase(); //loads the db with the data
 
-const maxPlayers = 3;
+const maxPlayers = 5;
 
 // sockets --> check for socket connection
 io.sockets.on("connection", (socket) => {
